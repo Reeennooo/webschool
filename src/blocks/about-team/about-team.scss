@@ -1,0 +1,96 @@
+.about-team {
+  padding-top: 79px;
+  padding-bottom: 160px;
+  margin-bottom: 114px;
+  background: #F4F8FB;
+  border-radius: 0 0 100px 100px;
+  @media (max-width: $mobile-big) {
+    padding: 40px  0px 80px;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 40px;
+  }
+  &__wp {
+    @media (max-width: $mobile-big) {
+      margin-right: -20px;
+      & h2 {
+        font-size: 25px;
+        line-height: 120%;
+      }
+    }
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 38px;
+    @media (max-width: $mobile-big) {
+      margin-top: 27px;
+      
+    }
+    @media (max-width: 375px) {
+      max-width: 280px;
+    }
+    p {
+      max-width: 640px;
+      @media (max-width: $mobile-big) {
+        font-size: 16px;
+        line-height: 156%;
+      }
+    }
+  }
+
+  &__swiper {
+    margin-top: 70px;
+    @media (max-width: $mobile-big) {
+      margin-top: 43px;
+      & p {
+        font-size: 18px;
+        line-height: 167%;
+        max-width: 180px;
+      }
+    }
+  }
+
+  &__slide {
+    max-width: 280px;
+    width: 100%;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (max-width: $mobile-big) {
+      max-width: 207.71px;
+      margin-right: 14px;
+    }
+  }
+
+  &__slide-img {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 39px;
+    @media (max-width: $mobile-big) {
+      margin-bottom: 32px;
+      max-height: 207.71px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &.sl1 {
+      border-radius: 0 100px 0 0;
+    }
+    &.sl2 {
+      border-radius: 0 0 0 100px;
+    }
+    &.sl3 {
+      border-radius: 100px 0 0 0;
+    }
+    &.sl4{
+      border-radius: 0 0 100px 0;
+    }
+  }
+}

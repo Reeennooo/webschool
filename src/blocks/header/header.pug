@@ -1,0 +1,103 @@
+header.header
+  .container
+    .header__wp
+      a(href="/").header__logo
+        img(src="img/logo.svg", alt="")
+      .header__links
+        button(type="button").btn.btn_sm.openMenu Все курсы
+        .header__links-wp
+          a(href="#")
+            span О нас
+          a(href="#")
+            span Статьи
+          a(href="#")
+            span Контакты
+      .header__right
+        a(href="tel:+7 (707) 202 13 13").header__phone
+          svg(width="20" height="20")
+            use(xlink:href="img/sprite.svg#wa")
+          span +7 (707) 202 13 13
+        button(type="button" data-modal="order-modal").btn.btn_sm Подобрать курс
+        a(href="#" data-modal="login-modal") Войти
+        button(type="button").header__burger
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1" x2="20" y2="1" stroke="black" stroke-width="2"/>
+            <line y1="7" x2="20" y2="7" stroke="black" stroke-width="2"/>
+            <line y1="13" x2="20" y2="13" stroke="black" stroke-width="2"/>
+          </svg>
+  .header__menu
+    span.header__menu-overlay
+    .container
+      .header__menu-line
+      .header__menu-body
+        .header__menu-col
+          a(href="#").link-bold Интернет-маркетолог
+          a(href="#").link-bold SEO специалист
+          a(href="#").link-bold Создание сайтов
+        .header__menu-col
+          a(href="#").link-bold SMM менеджер
+          a(href="#").link-sm
+            span
+            | PRO BUSINESS (Facebook + Instagram)
+          a(href="#").link-sm
+            span
+            | PRO Facebook
+        .header__menu-col
+          a(href="#").link-bold Контекстная реклама
+          a(href="#").link-sm
+            span
+            | Pro Контекст (Google Ads + Яндекс Директ)
+          a(href="#").link-sm
+            span
+            | От нуля до Pro Google ADS
+.mobMenu
+  .container
+    .mobMenu__wp
+      .mobMenu__top
+        img(src="img/logo_sm.svg", alt="")
+        a(href="tel:+7 (707) 202 13 13").header__phone.mobMenu__phone
+          svg(width="20" height="20")
+            use(xlink:href="img/sprite.svg#wa")
+          span +7 (707) 202 13 13
+        button(type="button").mobMenu__close
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.22168 15.364L15.3638 1.22183M15.778 15.364L1.63585 1.22183" stroke="black" stroke-width="2"/>
+          </svg>
+      .mobMenu__subtitle Курсы
+      .mobMenu__body
+        .header__menu-col
+          a(href="#").link-bold Интернет-маркетолог
+          a(href="#").link-bold SEO специалист
+          a(href="#").link-bold Создание сайтов
+        .header__menu-col
+          a(href="#").link-bold SMM менеджер
+          a(href="#").link-sm
+            span
+            | PRO BUSINESS (Facebook + Instagram)
+          a(href="#").link-sm
+            span
+            | PRO Facebook
+        .header__menu-col.mobMenu__col
+          a(href="#").link-bold Контекстная реклама
+          a(href="#").link-sm
+            span
+            | Pro Контекст (Google Ads + Яндекс Директ)
+          a(href="#").link-sm
+            span
+            | От нуля до Pro Google ADS
+        button(type="button" data-modal="order-modal").btn.btn_sm Подобрать курс
+        .header__links-wp
+          a(href="#")
+            span О нас
+          a(href="#")
+            span Статьи
+          a(href="#")
+            span Контакты
++modal().video-modal
+  .video-modal__wp
+
+include ../order-modal/order-modal
+include ../teacher-modal/teacher-modal
+include ../history-modal/history-modal
+include ../login-modal/login-modal
+include ../review-modal/review-modal

@@ -1,0 +1,114 @@
+.course-card {
+  background: #FFFFFF;
+  box-shadow: 0px 50px 100px #DEEDF8;
+  border-radius: 10px;
+  padding: 30px 32px 36px 34px;
+  min-height: 269px;
+  display: flex;
+  flex-direction: column;
+  max-width: 279px;
+  position: relative;
+
+  &__type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 18px;
+  }
+
+  h4 {
+    max-width: 240px;
+  }
+
+  &__bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      color: #6647F4;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      margin-top: 3px;
+
+      @media (hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    background: rgba(81, 127, 255, 0.15);
+    margin-right: 17px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__online {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: $blue;
+
+    &.redcol {
+      color: #FF517B;
+    }
+  }
+
+  &__duration {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000;
+    margin-top: 10px;
+  }
+
+  @media (max-width: $desktop) {
+    h4 {
+      margin-bottom: 10px;
+    }
+    &__bottom {
+      display: block;
+    }
+
+    &__img {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-right: 12px;
+    height: auto;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 247px;
+    padding-bottom: 37px;
+    margin-right: 8px;
+
+    h4 {
+      margin-bottom: 2px;
+    }
+
+    &__duration {
+      margin-top: 8px;
+    }
+  }
+}

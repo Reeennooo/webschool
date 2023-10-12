@@ -1,0 +1,109 @@
+.home-education {
+  padding-top: 89px;
+  background: #F4F8FB;
+  padding-bottom: 142px;
+
+  &__wp {
+    background: #7424EC;
+    box-shadow: 0px 50px 100px #DEEDF8;
+    border-radius: 100px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    position: relative;
+    color: #fff;
+    max-width: 585px;
+    z-index: 2;
+    .btn {
+      width: 257px;
+      margin-top: 48px;
+    }
+  }
+
+  &__wp {
+    padding: 107px 134px 110px;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+    min-height: 10px;
+    img {
+      max-width: 530px;
+      position: absolute;
+      right: -90px;
+      top: -61px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    &__wp {
+      padding: 80px 100px 90px;
+    }
+
+    &__img {
+      img {
+        top: 5px;
+        max-width: 400px;
+        right: -60px;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 60px;
+    &__wp {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 50px 70px 60px;
+    }
+
+    &__img {
+      img {
+        position: relative;
+        top: auto;
+        right: auto;
+      }
+    }
+
+    &__text {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 46px;
+    padding-bottom: 60px;
+    .container {
+      padding: 0;
+    }
+    &__wp {
+      padding: 54px 40px 70px;
+      border-radius: 50px 50px 0 50px;
+    }
+
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      margin-top: 34px;
+      h3 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      .btn {
+        margin-top: 41px;
+      }
+    }
+  }
+}

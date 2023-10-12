@@ -1,0 +1,17 @@
+mixin learnCard(num, color, title, text, cls)
+  .learn-card(class=cls)
+    .learn-card__num #{num}
+    .learn-card__content
+      .learn-card__ico(class=color)
+        svg(width="13" height="10")
+          use(xlink:href="img/sprite.svg#check")
+      h4 #{title}
+      p #{text}
+
+mixin factorCard(num, color, title, text, cls)
+  .factor-card(class=cls)
+    .factor-card__content
+      .factor-card__ico(class=color) #{num}
+      h4!=title
+      p #{text}
+

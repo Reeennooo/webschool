@@ -1,0 +1,112 @@
+.article-banner {
+  width: 100%;
+  background-color: #F4F8FB;
+}
+
+.article-banner__wp {
+  background-color: #517FFF;
+  border-radius: 100px 100px 0px 100px;
+  box-shadow: 0px 50px 100px #DEEDF8;
+  padding: 94px 238px 98px 122px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.article-banner__left {max-width: 308px;}
+.article-banner__right {
+  padding-top: 15px;
+  max-width: 340px;
+}
+
+.article-banner__left {
+  color: #FFF;
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 25px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.article-banner__list {
+  padding: 0;
+  list-style: none;
+}
+
+.article-banner__list-el {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 48px;
+  color: #FFF;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #FEC001;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    transform: translateY(5px);
+  }
+}
+
+.article-banner__list-el:last-of-type {margin-bottom: 0px;}
+
+
+@media(max-width: $desktop){
+  .article-banner__wp {padding: 50px 80px;}
+}
+
+@media(max-width: $tablet){
+
+  .article-banner__left h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 28px;
+  }
+
+  .article-banner__left p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .article-banner__list-el {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    padding-left: 35px;
+  }
+
+  .article-banner__list-el:before {width: 11px; height: 11px;}
+
+}
+
+@media(max-width: $mobile-big){
+  .article-banner .container {padding: 0;}
+  .article-banner__wp {
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 30px 105px 33px;
+    border-radius: 50px 50px 0 50px;
+  }
+
+  .article-banner__left {margin-bottom: 38px;}
+
+  .article-banner__right {padding: 0;}
+
+  .br-adaptation {display: none;}
+}
+  

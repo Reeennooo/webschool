@@ -1,0 +1,221 @@
+.coursecost {
+  background-color: #F4F8FB;
+}
+
+.coursecost__wrapper {
+  background-color: #FFF;
+  border-radius: 100px;
+  padding-top: 178px;
+  padding-bottom: 190px;
+}
+
+.coursecost__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.coursecost__price {
+  padding: 70px 0px;
+  min-width: 480px;
+}
+
+.coursecost__price-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: $text-color;
+  padding-bottom: 60px;
+}
+
+.coursecost__price-el {margin-bottom: 76px;}
+
+.coursecost__price-el:first-of-type {margin-bottom: 35px;}
+
+.coursecost__smalltxt {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.coursecost__cost {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.coursecost__aplication {
+  background-color: #517FFF;
+  box-shadow: 0px 50px 100px #DEEDF8;
+  border-radius: 100px 100px 0 100px;
+  padding: 100px;
+  padding-right: 84px;
+  max-width: 581px;
+}
+
+.coursecost__aplication-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FFF;
+  padding-bottom: 50px;
+}
+
+//checkbox
+
+.coursecost__checkboxwp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 56px;
+}
+
+// input
+.coursecost__name, .coursecost__number {
+  display: block;
+  width: 100%;
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFF;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 0;
+  padding-bottom: 20px;
+  margin-bottom: 31px;
+}
+
+.coursecost__name::placeholder, .coursecost__number::placeholder{
+  color: #FFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.for-coursecost__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.coursecost__btn {
+  border-color: #FFF;
+  color: #FFF;
+}
+
+.coursecost__agree {
+  margin-top: 50px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFF;
+}
+
+.agree-links {
+  transition: color .3s ease;
+  color: rgba(254, 192, 1, 1);
+  &:hover{color: $violet}
+}
+
+
+@media(max-width: $desktop){
+
+  .coursecost__wrapper {
+    background-color: #F4F8FB;
+    border-radius: 0;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .coursecost__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: $mobile-big){
+
+  .coursecost__wrapper .container {padding: 0;}
+  .coursecost__inner {
+    display: block;
+  }
+
+  .coursecost__price {
+    padding: 80px $grid-spacing-mid 50px $grid-spacing-mid;
+  }
+  
+  .coursecost__aplication {
+    width: 100%;
+    max-width: none;
+    border-radius: 0px 0px 50px 50px;
+    padding: 46px 45px 48px 42px;
+  }
+}
+
+@media(max-width: $mobile){
+  .coursecost__price {
+    padding: 80px $grid-spacing-sm 50px $grid-spacing-sm;
+    min-width: 300px;
+  }
+
+  .coursecost__price-title {
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+
+  .coursecost__cost {
+    font-size: 20px;
+    line-height: 50px;  
+  }
+
+  .coursecost__smalltxt {margin-bottom: 0;}
+
+  .coursecost__date {display: block;}
+
+  .coursecost__price-el:first-of-type {margin-bottom: 13px;}
+
+  .coursecost__price-el {margin-bottom: 20px;}
+
+
+  // Стили для формы 
+  .coursecost__aplication-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 37px;
+  }
+
+  .checkbox__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .coursecost__name::placeholder, .coursecost__number::placeholder{
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .coursecost__checkboxwp {
+    margin-bottom: 46px;
+    padding-left: 5px;
+  }
+
+  .coursecost__name, .coursecost__number {
+    padding-bottom: 10px;
+  }
+
+  .for-coursecost__btn {justify-content: flex-start;}
+  .coursecost__btn {width: 215px;}
+
+  .coursecost__agree {margin-top: 15px;}
+}
+
+
+
+

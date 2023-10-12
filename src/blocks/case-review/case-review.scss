@@ -1,0 +1,250 @@
+.case-review {
+  padding-top: 196px;
+  padding-bottom: 238px;
+  &__wp {
+    background: #FFFFFF;
+    border: 1px solid #F4F8FB;
+    box-shadow: 0px 50px 100px #DEEDF8;
+    display: flex;
+    min-height: 561px;
+    position: relative;
+    border-radius: 100px 100px 0 100px;
+    padding-right: 20px;
+  }
+
+  &__left {
+    padding: 101px 98px 70px 124px;
+    background: #6647F4;
+    position: relative;
+    border-radius: 100px 100px 0 100px;
+    width: 100%;
+    max-width: 599px;
+    margin-right: 13%;
+    color: #fff;
+  }
+
+  &__el1 {
+    position: absolute;
+    top: 174px;
+    right: 0;
+    width: 276px;
+    height: 277px;
+    background: #7424EC;
+    border-radius: 100px 0px 0px 0px;
+  }
+
+  &__el2 {
+    position: absolute;
+    background: $blue;
+    border-radius: 0px 0px 100px 0px;
+    top: 119px;
+    width: 184px;
+    height: 185px;
+    right: -81px;
+  }
+
+  &__right {
+    max-width: 315px;
+    padding-top: 111px;
+
+    h5 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      margin-top: 43px;
+      width: 200px;
+    }
+  }
+
+  &__element {
+    position: absolute;
+    bottom: -46px;
+    left: -137px;
+    width: 264px;
+    height: 264px;
+    z-index: -1;
+  }
+
+  &__right-bottom {
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+
+      span {
+        color: #6647F4;
+      }
+    }
+  }
+
+  &__video {
+    position: relative;
+    margin-top: 70px;
+    z-index: 4;
+    border-radius: 60px 0 60px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 372px;
+    width: 100%;
+    height: 200px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+      width: 60px;
+      height: 60px;
+      padding-bottom: 1px;
+      padding-left: 1px;
+      transition: transform 0.25s;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        span {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+    &__left {
+      padding: 90px 90px 60px 110px;
+      max-width: 570px;
+    }
+
+    &__wp {
+      min-height: 530px;
+    }
+
+    &__el2 {
+      top: 129px;
+      width: 171px;
+      height: 169px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__left {
+      padding: 90px 58px 60px 70px;
+      max-width: 532px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__wp {
+      flex-direction: column;
+      padding-right: 0;
+    }
+
+    &__left {
+      max-width: initial;
+      margin-right: 0;
+      border-radius: 50px 50px 0 0;
+    }
+
+    &__right {
+      padding: 60px 48px 70px 40px;
+      max-width: initial;
+    }
+
+    &__el2 {
+      right: 0;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    .container {
+      padding: 0;
+    }
+
+    &__left {
+      padding: 88px 33px 69px;
+
+      h3 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+
+    &__video {
+      margin-top: 129px;
+      height: 136px;
+      max-width: 280px;
+      border-radius: 42px 0 42px 0;
+
+      span {
+        height: 36px;
+        width: 36px;
+      }
+
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    &__element {
+      display: none;
+    }
+
+    &__el1 {
+      width: 193px;
+      height: 193px;
+      top: 220px;
+      right: 93px;
+    }
+
+    &__el2 {
+      width: 128px;
+      height: 130px;
+      right: 33px;
+      top: 181px;
+    }
+
+    &__wp {
+      border-radius: 100px 100px 0 50px;
+    }
+
+    &__right {
+      h5 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 700;
+        margin-bottom: 31px;
+      }
+
+      .btn {
+        margin-top: 34px;
+      }
+    }
+  }
+}

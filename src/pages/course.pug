@@ -1,0 +1,37 @@
+extends ../pug/layout.pug
+
+block meta
+    title Страница Курса
+    meta(name='description', content='')
+
+//-block append head
+   link(rel='stylesheet', href='css/some.css')
+
+//-block header
+
+block content
+  include ../blocks/course-main/course-main
+  include ../blocks/courseteach-section/courseteach-section
+  include ../blocks/lk-section/lk-section
+  include ../blocks/demand-section/demand-section
+  include ../blocks/youlearn-section/youlearn-section
+  +videoSection("video-section_course")
+  +weteachSection("")
+  include ../blocks/programcourse-section/programcourse-section
+  include ../blocks/teachers-section/teachers-section
+  include ../blocks/employment-section/employment-section
+  include ../blocks/sure-section/sure-section
+  include ../blocks/reviewsemploy-section/reviewsemploy-section
+  include ../blocks/works-students/works-students
+  include ../blocks/success-section/success-section
+  include ../blocks/course-resume/course-resume
+  include ../blocks/course-cost/course-cost
+  include ../blocks/questions/questions
+
+
+//-block footer
+
+//-block prepend page-bottom
+//-    include ../blocks/modal-test/modal-test
+//- block append page-bottom
+//-   script(src='js/some.js')

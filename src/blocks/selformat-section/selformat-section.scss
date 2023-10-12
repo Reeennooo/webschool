@@ -1,0 +1,135 @@
+.selformat-section {
+  padding-top: 70px;
+  padding-bottom: 150px;
+  background-color: #F4F8FB;
+  &__wp {
+    position: relative;
+    background: $blue;
+    box-shadow: 0px 50px 100px #DEEDF8;
+    border-radius: 101px 101px 0 101px;
+    padding: 95px 120px 91px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+
+    .btn {
+      margin-top: 36px;
+      width: 182px;
+    }
+  }
+
+  &__right {
+    width: 60%;
+    max-width: 459px;
+    padding-top: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__row {
+    margin-bottom: 42px;
+    color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 27px;
+    }
+  }
+
+  &__row-top {
+    display: flex;
+    align-items: center;
+
+    span {
+      min-width: 40px;
+      width: 40px;
+      margin-right: 16px;
+      line-height: 0;
+    }
+  }
+
+  &__element {
+    width: 264px;
+    position: absolute;
+    bottom: -112px;
+    left: -136px;
+    z-index: -1;
+  }
+
+  @media (max-width: $desktop) {
+    padding-bottom: 90px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    &__wp {
+      display: block;
+      padding: 80px;
+    }
+
+    &__right {
+      width: 100%;
+      max-width: initial;
+    }
+
+    &__left {
+      margin-bottom: 32px;
+      .btn {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__wp {
+      border-radius: 50px 50px 0 50px;
+      padding: 47px 44px 59px 42px;
+    }
+
+    &__right {
+      padding-top: 0;
+    }
+
+    &__row {
+      margin-bottom: 35px;
+
+      p {
+        margin-top: 22px;
+      }
+    }
+
+    &__row-top {
+      span {
+        min-width: 30px;
+        width: 30px;
+        margin-right: 10px;
+      }
+      svg {
+        max-height: 28px;
+        max-width: 29px;
+      }
+    }
+  }
+
+}

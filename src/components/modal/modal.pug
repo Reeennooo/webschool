@@ -1,0 +1,12 @@
+mixin modal()
+    //- Вызов:
+        +modal().modal-images
+            p some blocks
+    .i-modal.is-default-hidden&attributes(attributes)
+        .i-modal__content
+            .i-modal__close(data-modal-close)
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.22168 15.364L15.3638 1.22183M15.778 15.364L1.63585 1.22183" stroke="black" stroke-width="2"/>
+              </svg>
+            .i-modal__inner
+                block

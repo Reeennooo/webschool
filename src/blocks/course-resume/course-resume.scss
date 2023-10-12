@@ -1,0 +1,312 @@
+.resume {
+  background-color: #F4F8FB;
+  padding-bottom: 312px;
+  padding-top: 78px;
+  position: relative;
+}
+
+.resume__wp {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.resume__block {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #FFF;
+  border: 1px solid #F4F8FB;
+  box-shadow: 0px 50px 100px #DEEDF8;
+  border-radius: 100px 100px 0px 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.resume__maindecoration {
+  width: 264px;
+  height: 264px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -105px;
+  left: -135px;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.resume__leftpart {
+  border-radius: 100px 100px  0px 100px;
+  box-shadow: 0px 50px 100px #DEEDF8;
+  padding: 0 124px;
+  padding-top: 98px;
+  padding-bottom: 122px;
+  flex: 1;
+  position: relative;
+}
+
+.resume__dec1 {
+  width: 180px;
+  height: 180px;
+  background-color: #F4F8FB;
+  border-radius: 0px 0px 0px 100px;
+  position: absolute;
+  bottom: 277px;
+  left: 66px;
+}
+
+.resume__dec2 {
+  width: 180px;
+  height: 180px;
+  background-color: #517FFF;
+  border-radius: 0px 100px 0px 0px;
+  position: absolute;
+  bottom: 277px;
+  left: 246px;
+}
+
+.resume__dec3 {
+  width: 47px;
+  height: 47px;
+  background-color: transparent;
+  border: 8px solid rgba(102, 71, 244, 0.15);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 433px;
+  left: 158px;
+}
+
+.resume__dec4 {
+  width: 105px;
+  height: 105px;
+  background-color: transparent;
+  border: 40px solid #F4F8FB;;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 150px;
+  left: 435px;
+}
+
+
+.resume__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 53px;
+}
+
+.resume__prewiev {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 65px;
+}
+
+.resume__avatar {
+  width: 133px;
+  height: 134px;
+  border-radius: 0px 0px 50px 0px;
+  margin-right: 32px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.resume__job {
+  padding-top: 10px;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.resume__document {
+  position: relative;
+  z-index: 1;}
+
+.resume__certificate {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 133px;
+}
+
+.resume__img-wp {
+  width: 353px;
+  height: 250px;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.resume__rightpart {
+  flex: 1;
+  padding: 111px 135px 182px 99px;
+}
+
+.resume__adaptation {display: none;}
+
+.resume__skill-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 43px;
+}
+
+.resume__skills {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  &:last-of-type {margin-bottom: 0;}
+}
+
+.resume__show {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $violet;
+  transition: color .3s ease;
+  visibility: hidden;
+  &:hover {
+    color: #FEC001;
+  }
+}
+
+.resume__hideskill_show {display: block;}
+
+
+@media(max-width: $desktop){
+  .resume__rightpart {padding: 111px 30px;}
+  .resume__leftpart {padding: 98px 50px 122px;}
+}
+
+@media(max-width: $tablet){
+  .resume {padding-bottom: 0px;}
+
+  .resume__block {flex-direction: column;}
+  .resume__rightpart {display: none;}
+  .resume__adaptation {
+    display: block;
+    margin-bottom: 54px;
+  }
+
+  .resume__img-wp {margin: auto;}
+
+  .resume__certificate {
+    margin-bottom: 100px;
+  }
+
+  .resume__dec1 {
+    left: 120px;
+    bottom: 250px;
+  }
+
+  .resume__dec2 {
+    left: 300px;
+    bottom: 250px;
+  }
+
+  .resume__dec3 {
+    bottom: 407px;
+  }
+}
+
+@media(max-width: $mobile-big){
+  .resume .container {padding: 0;}
+
+  .resume__leftpart {padding: 0;}
+
+  .resume__block {
+    border-radius: 0px 50px 50px 50px;
+    padding: 57px $grid-spacing-mid;
+  }
+
+  .resume__maindecoration {display: none;}
+  .resume__dec1 {
+    left: 120px;
+    bottom: 120px;
+  }
+  .resume__dec2 {
+    left: 300px;
+    bottom: 120px;
+  }
+  .resume__dec3 {display: none;}
+  .resume__dec4 {bottom: 100px;}
+
+  .resume__leftpart {
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  .resume__hideskill {display: none;}
+  .resume__hideskill_show {display: block;}
+  .resume__show {visibility: visible;}
+}
+
+@media(max-width: $mobile){
+
+  .resume__block {padding: 57px $grid-spacing-sm 70px $grid-spacing-sm;}
+
+  .resume__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 36px;
+  }
+
+  .resume__avatar {
+    width: 84px;
+    height: 85px;
+    border-radius: 0px 0px 100px 0px;
+    margin-right: 22px;
+  }
+
+  .resume__prewiev {margin-bottom: 55px;}
+
+  .resume__job {padding-top: 0;}
+
+  .resume__job h4, .resume__skill-title {font-size: 18px;}
+  
+  .resume__skills {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .resume__certificate {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .resume__dec1 {
+    width: 141px;
+    height: 141px;
+    left: -$grid-spacing-sm;
+    bottom: 125px;
+  }
+  .resume__dec2 {
+    width: 145px;
+    height: 145px;
+    left: 93px;
+    bottom: 125px;
+  }
+
+  .resume__img-wp {
+    width: 277px;
+    height: 197px;
+  }
+
+}

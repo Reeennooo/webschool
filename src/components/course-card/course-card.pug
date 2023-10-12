@@ -1,0 +1,14 @@
+mixin courseCard(typeText, titleText, imgSrc, durationText, onlineText, redOnflineText, link)
+  .swiper-slide.course-card
+    if typeText
+      .course-card__type #{typeText}
+    h4!=titleText
+    .course-card__bottom
+      .course-card__img
+        img(src=imgSrc)
+      .course-card__info
+        if (onlineText)
+          .course-card__online(class=redOnflineText ? "redcol" : "") #{onlineText}
+        .course-card__duration #{durationText}
+        if (link)
+          a(href="#") Подробнее

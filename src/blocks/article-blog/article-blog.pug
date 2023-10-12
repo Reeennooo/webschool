@@ -1,0 +1,46 @@
+
+section.article-blog
+  .article-blog__decaration
+  .container
+    .article-blog__head
+      .article-blog__title Блог: все самое полезное
+      .article-blog__button
+        +selectBlock("Все темы", "1")
+          +selectBlockEl("Все темы", "1")
+          +selectBlockEl("Маркетинг", "2")
+          +selectBlockEl("Дизайн", "3")
+          +selectBlockEl("SMM", "4")
+    .article-blog__body
+        +blog-article({
+            cl: "--persian-blue",
+            subject: "Маркетинг",
+            title: "Скрытые функции IOS",
+            text: "Парочку подсказок, как упростить нашу жизнь Лупа iPhone также можно использовать в качестве увеличительного стекла, реализуя возможности камеры",
+            articlesImg: '../img/article-blog/1.png',
+            alt: 'Telephone'
+          })
+        +blog-article({
+            subject: "Дизайн",
+            title: "Как запускать таргетированную рекламу?",
+            text: "Любимые советы от webschool.kz. Сегодня рубрика о приложениях-помощниках! Телефон SMM-щика - это золотой клад с программами. ",
+            articlesImg: '../img/article-blog/2.png',
+            alt: 'Telephone'
+          })
+        +blog-article({
+            cl: "--red",
+            subject: "SMM",
+            title: "Лайфхаки SMM-менеджера",
+            text: "Парочку подсказок, как упростить нашу жизнь Лупа iPhone также можно использовать в качестве увеличительного стекла, реализуя возможности камеры",
+            articlesImg: '../img/article-blog/3.png',
+            alt: 'Telephone'
+          })
+        +blog-article({
+            subject: "Дизайн",
+            title: "Как выбрать шрифт для дизайна и не сойти с ума",
+            text: "Любимые советы от webschool.kz. Сегодня рубрика о приложениях-помощниках! Телефон SMM-щика - это золотой клад с программами. ",
+            articlesImg: '../img/article-blog/4.png',
+            alt: 'Telephone'
+          })
+    .article-blog__link
+      a(href="##").btn.btn_sm.
+        Показать больше статей

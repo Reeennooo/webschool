@@ -1,0 +1,20 @@
+section.teachers-section
+  .container
+    .teachers-section__wp
+      h2 Преподаватели
+      .teachers-section__element
+        img(src="img/selformat-section/element.png", alt="")
+      .teachers-section__block
+        .teachers-section__block-back
+        .teachers-section__swiper.teachers-section__swiper-section.swiper
+          .swiper-wrapper
+            +teacherSlide("img/teachers-section/teacher1.jpg", "Акылбек Рамазанов", "Более 10 лет опыта в маркетинге и создании сайтов. Вывел в ТОП Google и Яндекс более 100 сайтов. Основатель веб-студии 4WEB.")
+            +teacherSlide("img/teachers-section/teacher2.jpg", "Нуралбек Рамазанов", "Более 10 лет опыта в маркетинге и создании сайтов. Вывел в ТОП Google и Яндекс более 100 сайтов. Основатель веб-студии 4WEB.")
+            +teacherSlide("img/teachers-section/teacher3.jpg", "Акылбек Нуралбеков", "Более 10 лет опыта в маркетинге и создании сайтов. Вывел в ТОП Google и Яндекс более 100 сайтов. Основатель веб-студии 4WEB.")
+          .teachers-section__nav
+            button(type="button").teachers-section__swiper-prev_sect
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-left")
+            button(type="button").teachers-section__swiper-next_sect
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-right")

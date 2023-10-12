@@ -1,0 +1,17 @@
+.article-slide {
+  width: 257px;
+  height: 257px;
+  // width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media(max-width: $mobile){
+  .article-slide {
+    width: 214px;
+    height: 214px;
+  }
+}

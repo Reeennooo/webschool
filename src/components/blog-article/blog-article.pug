@@ -1,0 +1,7 @@
+mixin blog-article(data)
+  a(href="##").blog-article
+            .blog-article__items
+              .blog-article__subject(class= `blog-article__subject${data.cl}`)&attributes(attributes)=  data.subject
+              .blog-article__title= data.title
+              .blog-article__text=  data.text
+            img(src=`${data.articlesImg}` alt=  data.alt).blog-article__img

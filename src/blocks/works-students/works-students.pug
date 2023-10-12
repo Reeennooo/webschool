@@ -1,0 +1,94 @@
+-
+  workstudent = [
+    {
+      slideNumber: 1,
+      title: "Социальные сети для<br>Ивана Дорна",
+      student: "Автор работы ученица<br> Марал",
+      srcAvatar: "img/works-students/slides/student1.png",
+      ul: [
+        "Настройка систем аналитики",
+        "Анализ сайта, ниши и ресурсов конкурентов",
+        "Техническая оптимизация сайта <span class='show-hidden-ulAdaptation'>показать все</span>",
+        "Формирование стратегии продвижения",
+        "Оптимизация структуры и каталога детальная проработка страниц <span class='show-hidden-ul'>показать все</span></span>"
+      ],
+      ulhidden: [
+        "Скрытый пункт",
+        "Второй скрытый",
+      ],
+      quote: "Моя жизнь изменилась в целом, так как я начала заниматься тем, что мне всегда нравилось",
+      srcWorkImg: "img/works-students/slides/work1.png",
+    },
+    {
+      slideNumber: 2,
+      title: "Это новый слайд",
+      student: "Автор работы ученица<br> Марал",
+      srcAvatar: "img/works-students/slides/student1.png",
+      ul: [
+        "Первый пункт",
+        "Второй пункт",
+        "Хочешь увидеть больше? <span class='show-hidden-ul'>показать все</span>"
+      ],
+      ulhidden: [
+        "Скрытый пункт",
+        "Второй скрытый",
+        "Просто невероятно"
+      ],
+      quote: "Моя жизнь изменилась в целом, так как я начала заниматься тем, что мне всегда нравилось",
+      srcWorkImg: "img/works-students/slides/work1.png",
+    },
+    {
+      slideNumber: 3,
+      title: "Социальные сети для<br>Ивана Дорна",
+      student: "Автор работы ученица<br> Марал",
+      srcAvatar: "img/works-students/slides/student1.png",
+      ul: [
+        "Первый пункт",
+        "Второй пункт",
+      ],
+      ulhidden: [
+        "Скрытый пункт",
+        "Второй скрытый",
+      ],
+      quote: "Моя жизнь изменилась в целом, так как я начала заниматься тем, что мне всегда нравилось",
+      srcWorkImg: "img/works-students/slides/work1.png",
+    },
+  ]
+  
+section.works-students
+  .container
+    h2.works-students__title Работы учеников
+    .works-students__wp
+      .works-students__decoration1
+        img(src="img/works-students/decoration1.png", alt="")
+      .works-students__decoration2
+        img(src="img/works-students/decoration2.png", alt="")
+      .works-students__decoration3
+        img(src="img/works-students/decoration3.png", alt="")
+      .works-students__decoration4
+        img(src="img/works-students/decoration4.png", alt="")
+      .works-students__swiper.swiper
+        .swiper-wrapper
+          each item in workstudent
+            +workstudent-slide(
+              item.slideNumber,
+              item.title,
+              item.student,
+              item.srcAvatar,
+              item.ul,
+              item.ulhidden,
+              item.quote,
+              item.srcWorkImg)
+      button(type="button").works-students__swiper-prev
+        svg(width="10" height="10" fill="#FFF")
+          use(xlink:href="img/sprite.svg#arrow-left")
+      button(type="button").works-students__swiper-next
+        svg(width="10" height="10" fill="#FFF")
+          use(href="img/sprite.svg#arrow-right")
+
+
+
+
+    
+    
+

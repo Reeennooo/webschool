@@ -1,0 +1,23 @@
+mixin successSlide(old, prev, now, photo, text, hideBtn)
+  .swiper-slide.success-slide__el
+    .success-slide__wp
+      .success-slide__info
+        h3 Акылбек Рамазанов
+        if (!text)
+          p "Более 10 лет опыта в маркетинге и создании сайтов. Вывел в ТОП Google и Яндекс более 100 сайтов. Основатель веб-студии 4WEB."
+        else
+          block
+        if (!hideBtn)
+          button(type="button" data-modal="history-modal").btn.btn--secondary Читать историю
+
+      .success-slide__photo(style=`background-image: url(${photo})`)
+        .success-slide__el-info
+          .success-slide__el-tag #{old}
+          .success-slide__el-row
+            .success-slide__el-tag #{prev}
+            .success-slide__el-tag.success-slide__el-tag_arr
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-right")
+            .success-slide__el-tag #{now}
+      .success-slide__swiper-back1
+      .success-slide__swiper-back2

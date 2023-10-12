@@ -1,0 +1,212 @@
+.workstudent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 77px 0;
+  padding-left: 84px;
+  padding-right: 177px;
+}
+
+.workstudent__information {
+  max-width: 480px;
+  padding: 0 25px;
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+.workstudent__imgcard {
+  padding-top: 35px;
+}
+
+.workstudent__forimg {
+  width: 228px;
+  max-width: 228px;
+  height: 483px;
+  box-shadow: 0px 30px 50px 0px rgba(70, 128, 172, 0.3);
+  border-radius: 20px;
+  border: 1px solid #CBDB;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+.workimg {
+  max-width: 228px;
+  max-height: 483;
+  object-fit: cover;
+}
+
+.workstudent__author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.workstudent__img {
+  width: 68px;
+  height: 67px;
+  margin-right: 22px;
+  border-radius: 10px;
+}
+
+.workstudent__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color;
+}
+
+ul.workstudent__aboutwork {
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 32px;
+  padding-bottom: 49px;
+  list-style: none;
+}
+
+//- - - Стили для точек списка
+
+li.workstudent__el::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: $violet;
+  border: 5px solid #FFF;
+  box-shadow: 0px 5px 10px #DEEDF8;
+  margin-right: 18px;
+}
+
+//- - - 
+
+.workstudent__el {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.workstudent__hiddenul {display: none;}
+
+
+.workstudent__quote {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-color;
+  padding-bottom: 37px;
+}
+
+.quo {
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  z-index: 1;
+}
+
+.workstudent__btn {
+  width: 287px;
+}
+.workstudent__btntext2 {display: none;}
+
+
+.show-hidden-ul, .show-hidden-ulAdaptation {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $violet;
+  transition: color .3s ease;
+  &:hover{color:  rgba(254, 192, 1, 1);}
+  cursor: pointer;
+}
+
+.show-hidden-ulAdaptation {display: none;}
+
+
+@media(max-width: $tablet){
+  .workstudent {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 40px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .workstudent__imgcard {
+    padding-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media(max-width: $mobile-big){
+
+  .workstudent__forimg {
+    width: 220px;
+    height: 455px;
+  }
+  .works-students .container {
+    padding: 0;
+  }
+  .workstudent__btntext {display: none;}
+  .workstudent__btntext2 {display: inline-block;}
+  .workstudent__btn {margin: 0 auto;}
+
+  .workstudent__quote {
+    padding-top: 10px;
+    padding-left: 28px;
+    padding-bottom: 27px;
+  }
+  .quo {
+    top: 7px;
+    left: 4px;
+  }
+}
+
+@media(max-width: $mobile){
+  .workstudent {
+    padding: 45px $grid-spacing-sm 45px $grid-spacing-sm;
+  }
+
+  .workstudent__forimg {
+    width: 101px;
+    height: 213px;
+  }
+
+  .workstudent__information h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .workstudent__img {
+    width: 52px;
+    height: 51px;
+    margin-right: 14px;
+  }
+
+  ul.workstudent__aboutwork {
+    padding: 0;
+    // padding-left: 5px;
+    padding-top: 29px;
+    padding-bottom: 25px;
+  }
+
+  .workstudent__el {line-height: 25px;}
+
+  .workstudent__quote {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .workstudent__btn {width: 140px;}
+}

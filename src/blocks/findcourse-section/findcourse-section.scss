@@ -1,0 +1,156 @@
+.findcourse-section {
+  background: #F4F8FB;
+  padding-top: 77px;
+  padding-bottom: 150px;
+
+  &__wp {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+
+  &__form {
+    background: $blue;
+    box-shadow: 0px 50px 100px #DEEDF8;
+    padding: 99px 127px 119px 121px;
+    border-radius: 100px 100px 0 100px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-left {
+    max-width: 310px;
+    width: 40%;
+    margin-right: 20px;
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  &__form-right {
+    max-width: 450px;
+    width: 60%;
+    padding-top: 8px;
+  }
+
+  &__form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+
+    p {
+      margin-right: 10px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+
+      a {
+        color: #FEC001;
+
+        @media (hover: hover) {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .btn {
+      width: 142px;
+    }
+
+  }
+
+  @media (max-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    &__element {
+      width: 215px;
+      bottom: -90px;
+      left: -90px;
+    }
+
+    &__form {
+      padding: 70px 75px 80px 80px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-bottom: 60px;
+    &__element {
+      bottom: -90px;
+      left: -90px;
+      width: 215px;
+    }
+
+    &__form {
+      display: block;
+    }
+
+    &__form-left {
+      width: 100%;
+      max-width: initial;
+      margin-right: 0;
+    }
+
+    &__form-right {
+      width: 100%;
+      max-width: 550px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__element {
+      display: none;
+    }
+
+    &__form-row {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+
+      .btn {
+        margin-bottom: 17px;
+      }
+
+      p {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 36px;
+    padding-bottom: 40px;
+
+    &__form {
+      padding: 46px 34px 57px 42px;
+      border-radius: 50px 50px 0 50px;
+    }
+
+    &__form-left {
+      p {
+        margin-top: 14px;
+      }
+    }
+
+    &__form-right {
+      margin-top: 13px;
+    }
+
+    &__form-row {
+      margin-top: 30px;
+    }
+  }
+}

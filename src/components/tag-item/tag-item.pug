@@ -1,0 +1,5 @@
+mixin tagItem(text, isLink)
+  if (isLink)
+    a(href="#").tag-item.tag-item_link #{text}
+  else
+    .tag-item #{text}

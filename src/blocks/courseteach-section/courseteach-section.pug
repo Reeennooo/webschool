@@ -1,0 +1,105 @@
+-
+  courseteachInfo = [
+    {
+      title: 'Offline',
+      hiddenList: [
+        "занятия в офисе, г.Алматы",
+        "онлайн материалы ",
+        "домашние задания",
+        "практические задания",
+        "личный наставник",
+        "общение вживую и в общем чате",
+        "стажировка и трудойстройство",
+        ],
+    },
+    {
+      title: 'Online',
+      hiddenList: [
+        "занятия в офисе, г.Алматы",
+        "онлайн материалы ",
+        "домашние задания",
+        "практические задания",
+        "личный наставник",
+        "общение вживую и в общем чате",
+        "стажировка и трудойстройство",
+        ],
+    },
+    {
+      title: 'Учусь сам',
+      hiddenList: [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        ],
+    },
+    {
+      title: 'Марафон',
+      hiddenList: [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        ],
+    },
+  ]
+
+section.courseteach-section
+  .container
+    .courseteach-section__wp
+      .courseteach-section__head
+        h2 Как проходит </br>обучение
+        p Этот курс проходит в 4х форматах. Вы&nbsp;можете&nbsp;выбрать удобный формат обучения
+      .courseteach-section__list
+        #col1.courseteach-section__col
+          .courseteach-section__col-head
+            .courseteach-section__col-ico.offline
+              img(src="img/courseteach-section/offline.png" alt="")
+            h4 Offline
+          ul
+            li занятия в офисе, г.Алматы
+            li онлайн материалы
+            li домашние задания
+            li практические задания
+            li личный наставник
+            li общение вживую и в общем чате
+            li стажировка и трудойстройство
+          button(type="button" data-modal="order-modal").btn Записаться на offline курс
+        #col2.courseteach-section__col
+          .courseteach-section__col-head
+            .courseteach-section__col-ico.online
+              img(src="img/courseteach-section/online.png" alt="")
+            h4 Offline
+          ul
+            li онлайн занятия в ZOOM
+            li онлайн материалы
+            li домашние задания
+            li практические задания
+            li личный наставник
+            li общение вживую и в общем чате
+            li стажировка и трудойстройство
+          button(type="button" data-modal="order-modal").btn Записаться на offline курс
+        each item in courseteachInfo
+          +infolist(item.title,'', item.hiddenList)
+        #col3.courseteach-section__col
+          .courseteach-section__block.bl1
+            .courseteach-section__block-img
+              img(src="img/courseteach-section/ico1.svg" alt="")
+            .courseteach-section__block-content
+              h4 Учусь сам
+              p Купите доступ к&nbsp;видео&nbsp;урокам и&nbsp;смотрите&nbsp;в&nbsp;удобное время
+              a(href="#" data-modal="order-modal").btn.btn--secondary Посмотреть пробное занятие
+          .courseteach-section__block.bl2
+            .courseteach-section__block-img
+              img(src="img/courseteach-section/ico2.svg" alt="")
+            .courseteach-section__block-content
+              h4 Марафон
+              p 4 интенсивных дня обучения на выходных
+              a(href="#" data-modal="order-modal").btn.btn--secondary Подробнее
+

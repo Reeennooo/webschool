@@ -1,0 +1,18 @@
+section.findcourse-section
+  .container
+    .findcourse-section__wp
+      .teachers-section__element
+        img(src="img/selformat-section/element.png", alt="")
+      form(action="/", method="post").findcourse-section__form
+        .findcourse-section__form-left
+          h3 Поможем быстро подобрать курс
+          p Мы позвоним, чтобы ответить на все ваши вопросы.
+        .findcourse-section__form-right
+          .input-block
+            input(type="text" name="name" placeholder="Ваше имя").name
+          .input-block
+            input(type="tel" inputmode="numeric" name="phone" placeholder="Телефон").phone
+          .findcourse-section__form-row
+            p Нажимая на кнопку, я соглашаюсь на </br><a href="#">обработку персональных данных</a> и с </br><a href="#">правилами пользования Платформой</a>
+            button(type="submit").btn.btn--secondary Отправить
+

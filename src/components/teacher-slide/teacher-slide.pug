@@ -1,0 +1,17 @@
+mixin teacherSlide(imgSrc, name, text)
+  .swiper-slide.teacher-slide
+    .teacher-slide__photo
+      img(src=imgSrc, alt="")
+    .teacher-slide__info
+      h3 Преподаватели
+      .teacher-slide__name #{name}
+      p #{text}
+      button(type="button" data-modal="teacher-modal").btn Подробнее&nbsp;<span> о преподавателе</span>
+
+mixin teacherSlideModal(imgSrc, name)
+  .swiper-slide.teacher-slide.teacher-slide_modal
+    .teacher-slide__photo
+      img(src=imgSrc, alt="")
+    .teacher-slide__info
+      h3!=name
+      block

@@ -1,0 +1,29 @@
+extends ../pug/layout.pug
+
+block meta
+    title Главная 2
+    meta(name='description', content='')
+
+//-block append head
+   link(rel='stylesheet', href='css/some.css')
+
+//-block header
+
+block content
+  include ../blocks/home-hero/home-hero
+  include ../blocks/home-aboutus/home-aboutus
+  include ../blocks/home-basics/home-basics
+  include ../blocks/home-cases/home-cases
+  +aboutWhySection("about-why_home", true)
+  +weteachSection("", "Нам доверяют", "Мы работаем с передовыми компаниями")
+  +reviewsSection("reviews-section_about", "Отзывы o 4web")
+  include ../blocks/home-education/home-education
+
+
+
+//-block footer
+
+//-block prepend page-bottom
+//-    include ../blocks/modal-test/modal-test
+//- block append page-bottom
+//-   script(src='js/some.js')

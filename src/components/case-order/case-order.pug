@@ -1,0 +1,29 @@
+mixin caseOrder(cls, title)
+  section.case-order(class=cls)
+    .container
+      .case-order__wp
+        h3!=title ? title : "Оставьте заявку и получите предложение </br>по контекстной рекламе"
+        form(action="/", method="post").case-order__form
+          .input-block
+            input(type="text" name="site" placeholder="Адрес вашего сайта").site
+          .input-block
+            input(type="text" name="name" placeholder="Имя").name
+          .input-block
+            input(type="text" name="phone" placeholder="Телефон").phone
+          .case-order__form-btn
+            button(type="submit").btn.btn--secondary Получить предложение
+            p Отправляя заявку, вы соглашаетесь с&nbsp;<a href="#">условиями</a> передачи информации.
+
+mixin aboutOrder(cls)
+  section.about-order(class=cls)
+    .container
+      .about-order__wp
+        h3 Есть вопросы? Оставьте ваш телефон, и мы </br>ответим на них
+        form(action="/", method="post").about-order__form
+          .input-block
+            input(type="text" name="name" placeholder="Имя").name
+          .input-block
+            input(type="text" name="phone" placeholder="Телефон").phone
+          .about-order__form-btn
+            button(type="submit").btn.btn--secondary Отправить заявку
+            p Отправляя заявку, вы соглашаетесь с&nbsp;<a href="#">условиями</a> передачи информации.

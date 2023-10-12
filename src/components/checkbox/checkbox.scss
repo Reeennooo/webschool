@@ -1,0 +1,51 @@
+.checkbox__label {
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 33px;
+}
+
+//- - - Стили для chekBox
+
+.checkbox__forradio {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  margin-right: 15px;
+  position: relative;
+}
+
+
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.radio:checked {
+  background-color: rgb(255, 255, 255);
+  transition: background .5s ease;
+}

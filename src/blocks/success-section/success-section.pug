@@ -1,0 +1,19 @@
+section.success-section
+  .success-section__back
+  .container
+    .success-section__wp
+      h2 Истории успеха
+      .success-section__block
+        .success-section__swiper-wp
+          .swiper.success-section__swiper.success-section__swiper-section
+            .swiper-wrapper
+              +successSlide("23 года", "Слесарь", "Маркетолог", "img/success-section/chelovek.png")
+              +successSlide("25 лет", "Автомеханик", "Frontend dev", "img/success-section/chelovek.png")
+              +successSlide("27 лет", "АСУшник", "Тестировщик", "img/success-section/chelovek.png")
+            .success-section__nav
+              button(type="button").success-section__swiper-prev_sect
+                svg(width="16" height="16")
+                  use(xlink:href="img/sprite.svg#arrow-left")
+              button(type="button").success-section__swiper-next_sect
+                svg(width="16" height="16")
+                  use(xlink:href="img/sprite.svg#arrow-right")

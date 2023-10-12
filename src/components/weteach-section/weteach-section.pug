@@ -1,0 +1,23 @@
+mixin weteachSection(cls, title, subtitle)
+  section.weteach-section(class=cls)
+    .weteach-section__cicrle
+    .container
+      .weteach-section__wp
+        .weteach-section__left
+          h2 #{title ? title : "У нас учились"}
+          p #{subtitle ? subtitle : "Мы обучаем сотрудников лидеров рынка"}
+          .weteach-section__nav
+            button(type="button").weteach-section__swiper-prev
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-left")
+            button(type="button").weteach-section__swiper-next
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-right")
+        .weteach-section__swiper.swiper
+          .swiper-wrapper
+            .swiper-slide.weteach-section__swiper-el
+              img(src="img/weteach-section/logos.png", alt="")
+            .swiper-slide.weteach-section__swiper-el
+              img(src="img/weteach-section/logos.png", alt="")
+            .swiper-slide.weteach-section__swiper-el
+              img(src="img/weteach-section/logos.png", alt="")

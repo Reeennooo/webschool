@@ -1,0 +1,50 @@
+-
+  resumeSkills = [
+    "Ведение сообществ в соцсетях",
+    "Настройка таргетированной рекламы во «ВКонтакте», Facebook, Instagram, myTarget",
+    "SEO-продвижение сайтов",
+    "Медиапланирование<br>Сбор аналитики в Яндекс.Метрике и Google Analytics",
+    "Расчёт эффективности рекламы по KPI <span class='resume__show'>показать все</span>",
+    //- "Настройка контекстной рекламы в Яндекс.Директе, Google Ads",
+    //- "Разработка digital-стратегии<br>Работа в Excel и Google Sheets",
+  ],
+
+  hiddenSkils = [
+    "Настройка контекстной рекламы в Яндекс.Директе, Google Ads",
+    "Разработка digital-стратегии<br>Работа в Excel и Google Sheets",
+  ]
+
+section.resume
+  .container
+    .resume__wp
+      .resume__maindecoration
+        img(src="img/course-resume/decorate1.png", alt="")
+      .resume__block
+        .resume__leftpart
+          .resume__dec1
+          .resume__dec2
+          .resume__dec3
+          .resume__dec4
+          h2.resume__title Ваше резюме<br> после курса
+          .resume__prewiev
+            .resume__avatar
+              img(src="img/course-resume/avatar.png", alt="Ваше фото")
+            .resume__job
+              h4 Зарпалата<br>от 700 000 тг
+              p Должность<br>интернет-маркетолог
+          .resume__adaptation
+            h4.resume__skill-title Ключевые навыки
+            each el in resumeSkills
+              p.resume__skills!=el
+            each el in hiddenSkils
+              p.resume__skills.resume__hideskill!=el 
+          .resume__document
+            h4.resume__certificate Сертификат Webschool
+            .resume__img-wp
+              img(src="img/course-resume/certivicate.png", alt="Фото сертификак")
+        .resume__rightpart
+          h4.resume__skill-title Ключевые навыки
+          each el in resumeSkills
+            p.resume__skills!=el
+          each el in hiddenSkils
+            p.resume__skills!=el 

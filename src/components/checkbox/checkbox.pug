@@ -1,0 +1,7 @@
+mixin checkbox(id, value, label)
+  .checkbox
+    .checkbox__forradio
+      input(type="radio", id=`box-${id}` class="radio", value=value, name="coursecost-radio")&attributes(attributes)
+    label(for=`box-${id}` class="checkbox__label")=label
+
+//- selected - это атрибут checked

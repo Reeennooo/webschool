@@ -1,0 +1,380 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  position: relative;
+  background-color: #F4F8FB;
+
+  &__burger {
+    display: none;
+    line-height: 0;
+  }
+
+  &__wp {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 14px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__phone {
+    svg {
+      fill: #10C9A0;
+    }
+  }
+
+  &__logo {
+    padding-bottom: 10px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    .btn {
+      &::after{
+        content: "";
+        margin-left: 7px;
+        transform: rotate(45deg);
+        width: 7px;
+        height: 7px;
+        border-right: 2px solid #000;
+        border-bottom: 2px solid #000;
+        position: relative;
+        top: -2px;
+        transition: 0.2s;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          &::after {
+            border-color: #fff;
+          }
+        }
+      }
+
+      &.open {
+        background: $violet;
+        border-color: $violet;
+        color: #fff;
+        &::after {
+          transform: rotate(-135deg);
+          top: 1px;
+          border-color: #fff;
+        }
+
+      }
+    }
+  }
+
+  &__links-wp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+    margin-left: 25px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    button {
+      margin-left: 33px;
+      margin-right: 22px;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 71px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 28px;
+    padding-bottom: 126px;
+    background: #F4F8FB;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
+
+    .header__menu-overlay {
+      width: 100%;
+      position: absolute;
+      top: 401px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: calc(115vh - 473px);
+      background: rgba(157, 169, 179, 0.3);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      transition: 0.25s;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &_open {
+      visibility: visible;
+      opacity: 1;
+      .header__menu-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu-line {
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    height: 1px;
+    width: 100%;
+  }
+
+  &__menu-body {
+    margin-top: 72px;
+    display: flex;
+  }
+
+  &__menu-col {
+    width: 100%;
+    max-width: 280px;
+    margin-right: 120px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      transition: 0.2s;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .link-bold {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 24px;
+    }
+
+    .link-sm {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      display: flex;
+      margin-bottom: 22px;
+
+      span {
+        min-width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px #DEEDF8;
+        position: relative;
+        display: block;
+        margin-right: 27px;
+        top: -3px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: $violet;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $desktop) {
+    & &__burger {
+      display: block;
+      background: transparent;
+      padding: 0;
+      border: none;
+      outline: none;
+      margin-right: 0;
+      padding-bottom: 1px;
+    }
+    &__links {
+      display: none;
+    }
+
+    &__links-wp {
+      columns: 2;
+      column-gap: 12px;
+      position: relative;
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 46px;
+      padding-bottom: 31px;
+      overflow: hidden;
+      width: initial;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: -20px;
+        right: 43px;
+        border-radius: 50%;
+        border: 10px solid #FEC001;
+        width: 55px;
+        height: 55px;
+      }
+
+      a {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 60px;
+        display: block;
+        white-space: nowrap;
+      }
+    }
+
+    &__right {
+      .header__phone,
+      .btn {
+        display: none;
+      }
+    }
+
+    &__menu {
+      &_open {
+        display: none;
+      }
+    }
+
+    &__menu-col {
+      .link-bold {
+        margin-bottom: 25px;
+      }
+    }
+
+
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 11px;
+    padding-bottom: 13px;
+
+    &__wp {
+      align-items: center;
+    }
+
+    &__logo {
+      img {
+        width: 154px;
+      }
+    }
+
+    &__right {
+      a {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    & &__burger {
+      margin-left: 25px;
+    }
+  }
+}
+
+.mobMenu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F4F8FB;
+  z-index: 100;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+
+  &_open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (min-width: 1200px) {
+    display: none !important;
+  }
+
+  &__wp {
+    padding-top: 10px;
+
+    .btn {
+      margin-top: 54px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 27px;
+  }
+
+  &__close {
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    line-height: 0;
+  }
+
+  &__body {
+    margin-top: 25px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 8px;
+    svg {
+      margin-right: 14px;
+    }
+  }
+
+  &__col {
+    margin-top: 28px;
+  }
+}

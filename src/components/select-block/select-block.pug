@@ -1,0 +1,11 @@
+mixin selectBlock(text, initVal, linkSelect)
+  .select-block.select-block_link
+    button(type="button").select-block__btn.btn.btn_sm #{text}
+    if (!linkSelect)
+      input(type="hidden", name="select" value=initval ? initval : "")
+    .select-block__body
+      block
+
+
+mixin selectBlockEl(name, val)
+  a(href="#" data-val=val ? val : "") #{name}

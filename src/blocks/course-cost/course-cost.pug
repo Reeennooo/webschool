@@ -1,0 +1,27 @@
+section.coursecost
+  .coursecost__wrapper
+    .container
+      .coursecost__inner
+        .coursecost__price
+          h3.coursecost__price-title Стоимость<br>курса
+          .coursecost__price-el
+            p.coursecost__smalltxt Онлайн курс <span class="coursecost__date">22 марта - 28 апреля<span>
+            span.coursecost__cost 140 000 тг
+          .coursecost__price-el
+            p.coursecost__smalltxt Офлайн курс <span class="coursecost__date">1 марта - 15 апреля<span>
+            span.coursecost__cost 100 000 тг
+          .coursecost__options
+            +infolist("Рассрочка от Webschool", "Хехехе", ["Почти", "Даром"])
+            +infolist("Рассрочка от Каспи Банк", "Очень круто", ["Почти", "Даром"])       
+        .coursecost__aplication
+          h4.coursecost__aplication-title Записаться на курс<br>и получить бесплатную<br>консультацию
+          form(action="")
+            .coursecost__checkboxwp
+              +checkbox("1", "offline", "Офлайн", "checked")(checked)
+              +checkbox("2", "online", "Онлайн")
+            input(type="text", class="coursecost__name", placeholder="Ваше имя")
+            input(type="tel", class="coursecost__number", placeholder="Телефон")
+            .for-coursecost__btn
+              button.btn.coursecost__btn Записаться на курс
+          p.coursecost__agree Нажимая на кнопку, я соглашаюсь на <a href="#" class="agree-links">обработку персональных данных</a> и с <a href="#" class="agree-links">правилами пользования Платформой</a>
+

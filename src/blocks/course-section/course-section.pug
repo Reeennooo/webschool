@@ -1,0 +1,20 @@
+section.course-section
+  .container
+    .course-section__wp
+      .course-section__head
+        h2 Курсы<span>: получите конкретный навык или освойте новую профессию</span>
+        .course-section__nav
+          button(type="button").course-section__next
+            svg(width="16" height="16")
+              use(xlink:href="img/sprite.svg#arrow-right")
+      .swiper.course-section__grid(data-mobile="false")
+        .swiper-wrapper
+          +courseCard("Маркетинг", "SMM менеджер с нуля", "img/course-section/img1.png", "12 уроков, 2 месяца", "Онлайн и офлайн")
+          +courseCard("Маркетинг", "Интернет-маркетолог", "img/course-section/img2.png", "14 уроков, 1,5 месяца", "Офлайн", true)
+          +courseCard("Маркетинг", "Контекстная реклама", "img/course-section/img3.png", "5 уроков, 1 месяц", "Онлайн")
+          +courseCard("Маркетинг", "SEO специалист", "img/course-section/img4.png", "12 уроков, 2 месяца", "Онлайн и офлайн")
+          +courseCard("Программирование", "Frontend-разработчик HTML&CSS", "img/course-section/img5.png", "12 уроков, 2 месяца", "Онлайн и офлайн")
+          +courseCard("Дизайн", "UX/UI дизайнер с нуля", "img/course-section/img6.png", "14 уроков, 1,5 месяца", "Онлайн и офлайн")
+          +courseCard("Маркетинг", "Контент-маркетолог", "img/course-section/img7.png", "5 уроков, 1 месяца", "Офлайн", true)
+          +courseCard("Дизайн", "Мобильная съемка: фото и видео", "img/course-section/img8.png", "12 уроков, 2 месяца", "Онлайн и офлайн")
+      button(type="button").btn.course-section__more Показать больше курсов

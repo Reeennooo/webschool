@@ -1,0 +1,13 @@
++modal().login-modal
+  .login-modal__wp
+    .order-modal__back
+      img(src="img/header/order-modal-back.svg", alt="")
+    .order-modal__left
+      h3 Войти
+    form(action="/", method="post").login-modal__form
+      .input-block
+        input(type="text" placeholder="E-mail").email
+      .input-block
+        input(type="password" placeholder="Пароль").password
+      .order-modal__btn
+        button(type="submit").btn.btn--secondary Войти

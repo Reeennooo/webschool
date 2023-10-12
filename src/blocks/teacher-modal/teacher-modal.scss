@@ -1,0 +1,141 @@
+.teacher-modal {
+  .i-modal__content {
+    padding: 0;
+    border-radius: 100px 0 100px 100px;
+    max-width: 1179px;
+  }
+
+  .i-modal__close {
+    z-index: 5;
+    right: 23px;
+    top: 25px;
+  }
+
+  .teachers-section {
+    &__block {
+      border: none;
+      background: none;
+      border-radius: 100px 0 100px 100px;
+    }
+
+    &__nav {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      justify-content: flex-start;
+      margin-left: 389px;
+      margin-top: 20px;
+      margin-bottom: 26px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    .teachers-section {
+      &__nav {
+        margin-left: 340px;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    .i-modal__inner {
+      border-radius: 100px;
+    }
+    .teachers-section {
+      &__block {
+        margin-top: 0;
+        border-radius: 0;
+        padding: 49px 31px 12px;
+      }
+
+      &__block-back {
+        border-radius: 0 0 0 50px;
+      }
+
+      &__nav {
+        margin-left: 0;
+        justify-content: center;
+      }
+    }
+
+    .teacher-slide {
+      &__info {
+        padding-top: 33px;
+        h3 {
+          display: block;
+          font-size: 18px;
+          margin-bottom: 12px;
+        }
+      }
+
+      p {
+        margin-bottom: 25px;
+       }
+    }
+
+    .i-modal__content {
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .i-modal__close {
+      right: 40px;
+      top: 34px;
+
+      svg {
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+
+    &__wp {
+      border-radius: 100px;
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    padding: 0;
+    .i-modal {
+      &__content {
+        min-height: var(--app-height);
+        background: #fff;
+        border-radius: 0;
+        overflow: auto;
+      }
+
+      &__inner {
+        border-radius: 0;
+        height: 100%;
+      }
+
+      &__close {
+        right: 12px;
+        top: 5px;
+      }
+    }
+
+    &__wp {
+      height: 100%;
+      border-radius: 0px;
+    }
+
+    .teachers-section {
+      &__block {
+        box-shadow: none;
+        height: 100%;
+      }
+
+      &__nav {
+        justify-content: flex-start;
+        margin-top: 11px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &__info {
+      padding-bottom: 5px;
+    }
+  }
+}

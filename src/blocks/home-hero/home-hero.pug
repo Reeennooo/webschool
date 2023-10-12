@@ -1,0 +1,41 @@
+section.home-hero
+  .home-hero__back
+    img(src="img/home-hero/lev.png", alt="")
+  .container
+    .home-hero__wp
+      .home-hero__top
+        .main-hero__left
+          h1 Агентство полного </br>цикла
+          .main-hero__tags
+            +tagItem("Seo продвижение", true)
+            +tagItem("SMM продвижение", true)
+            +tagItem("Создание сайтов", true)
+            +tagItem("Контекстная реклама", true)
+            +tagItem("Копирайтинг / рерайтинг", true)
+            +tagItem("Создание интернет магазина", true)
+          +selectBlock("Все услуги", "", true)
+            +selectBlockEl("Seo продвижение", "")
+            +selectBlockEl("SMM продвижение", "")
+            +selectBlockEl("Создание сайтов", "")
+            +selectBlockEl("Контекстная реклама", "")
+            +selectBlockEl("Копирайтинг / рерайтинг", "")
+            +selectBlockEl("Создание интернет магазина", "")
+        .main-hero__right.home-hero__right
+          img(src="img/home-hero/home-hero.png", alt="")
+      .home-hero__form-wp
+        .teachers-section__element.home-hero__element
+          img(src="img/selformat-section/element.png", alt="")
+        form(action="/", method="post").home-hero__form
+          h3 Получайте на <b>300%</b> больше потенциальных клиентов всего через <b>2 месяца</b>, используя технологию <b>продвижения</b> Эльбрус
+          .home-hero__form-row
+            .input-block
+              input(type="text" name="site" placeholder="Адрес вашего сайта").site
+            .input-block
+              input(type="text" name="site" placeholder="Телефон").phone
+            .home-hero__form-btn
+              button(type="submit").btn.btn--secondary Получить предложение
+              p Отправляя заявку, вы соглашаетесь с&nbsp;<a href="#">условиями</a> передачи информации.
+          .home-hero__form-dots
+            span
+            span
+            span

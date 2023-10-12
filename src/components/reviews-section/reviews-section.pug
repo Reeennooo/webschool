@@ -1,0 +1,18 @@
+mixin reviewsSection(cls, title)
+  section.reviews-section(class=cls)
+    .container
+      .reviews-section__wp
+        .reviews-section__top
+          h2 #{title ? title : "О нас"}
+          button.reviews-section__swiper-next
+            svg(width="16" height="16")
+              use(xlink:href="img/sprite.svg#arrow-right")
+        .swiper.reviews-section__swiper
+          .swiper-wrapper
+            +review-el("swiper-slide", "Моя жизнь изменилась в целом, так как я начала заниматься тем, что мне всегда нравилось", "Марал", "img/reviews-section/reviewAva1.jpg", "SMM менеджер")
+            +review-el("swiper-slide", "Я сегодня уже вышла на работу,маркетоло-гом в небольшую частную музыкальную школу", "Айнура", "", "Создание сайтов")
+            +review-el("swiper-slide", "Методика лучшая что я встречал это 80% практики и 20 теории", "Нариман", "img/reviews-section/reviewAva2.jpg", "SMM менеджер", "https://youtu.be/4kw4xGtG9Q4")
+            +review-el("swiper-slide", "Я сходил на собеседования, и в итоге устроился в авиакомпанию интернет-маркетологом", "Марал", "img/reviews-section/reviewAva3.jpg", "SMM менеджер")
+            +review-el("swiper-slide", "Я ага сегодня уже вышла на работу,маркетоло-гом в небольшую частную музыкальную школу", "Айнура", "", "Создание сайтов")
+            +review-el("swiper-slide", "Методика вот эта лучшая что я встречал это 80% практики и 20 теории", "Нариман", "img/reviews-section/reviewAva2.jpg", "SMM менеджер", "https://youtu.be/4kw4xGtG9Q4")
+

@@ -1,0 +1,54 @@
+footer.footer(class=footerDopCls)
+  .footer__wrap
+    .container
+      .footer__wp
+        .footer__row
+          .footer__col1
+            .footer__call
+              a(href="tel:+7 (727) 329 29 75", title="+7 (727) 329 29 75") +7 (727) 329 29 75
+              a(href="tel:+7 (707) 202 13 13", title="+7 (707) 202 13 13") +7 (707) 202 13 13
+              p Мы на связи с 10:00 до 20:00
+            .footer__adress
+              p Алматы, Ленинский проспект, дом 6
+              a(href="mailto:info@webschool.kz", title="info@webschool.kz") info@webschool.kz
+            .footer__social
+              a(href="#", title="")
+                svg(width="10" height="18")
+                  use(xlink:href="img/sprite.svg#fb")
+              a(href="#", title="")
+                svg(width="21" height="21")
+                  use(xlink:href="img/sprite.svg#inst")
+              a(href="#", title="")
+                svg(width="24" height="24")
+                  use(xlink:href="img/sprite.svg#yt")
+          .footer__col2
+            a(href="#") Интернет-маркетолог
+            a(href="#") SMM-менеджер
+            a(href="#") SEO-специалист
+            a(href="#") Веб-дизайн
+            a(href="#") Контекстная реклама
+            a(href="#") Создание сайтов
+            a(href="#") Frontend-разработчик HTML&CSS
+          .footer__courses
+            +selectBlock("Все курсы", "", true)
+              +selectBlockEl("Интернет-маркетолог", "")
+              +selectBlockEl("SMM-менеджер", "")
+              +selectBlockEl("SEO-специалист", "")
+              +selectBlockEl("Веб-дизайн", "")
+              +selectBlockEl("Контекстная реклама", "")
+              +selectBlockEl("Создание сайтов", "")
+              +selectBlockEl("Frontend-разработчик HTML&CSS", "")
+          .footer__col3
+            a(href="#") О нас
+            a(href="#") Статьи
+            a(href="#") Истории успеха
+            a(href="#") Руководства
+            a(href="#") Контакты
+        .footer__bottom
+          p webschool © 2015-2021
+          div
+            a(href="#") Пользовательское соглашение
+            a(href="#") Оплата
+          p Мы используем файлы <span>cookie</span>
+
+

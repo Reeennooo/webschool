@@ -1,0 +1,68 @@
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #000;
+  background-color: transparent;
+  margin: 0;
+  padding: 0 18px;
+  z-index: 1;
+  transition: .25s linear;
+  transition-property: color, background-color, border-color;
+  @media (hover: hover) {
+    &:hover {
+      background-color: $violet;
+      border-color: $violet;
+      color: #fff;
+
+      &::before {
+        border-color: #fff;
+      }
+    }
+  }
+  &:active {
+    background-color: #fff;
+    color: #000000;
+  }
+  &.disabled,
+  &[disabled] {
+    pointer-events: none;
+    opacity: .5;
+  }
+  &_sm {
+    height: 40px;
+  }
+  &--secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    @media (hover: hover) {
+      &:hover {
+        color: $blue;
+        background-color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+.btn-inline {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  svg {
+    fill: cornflowerblue;
+    margin-right: 12px;
+  }
+}

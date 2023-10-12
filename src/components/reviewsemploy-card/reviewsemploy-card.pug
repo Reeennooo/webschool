@@ -1,0 +1,10 @@
+mixin reviewsemployCard(imgSrc, name, rank, text)
+  .swiper-slide.reviewsemploy-card
+    .reviewsemploy-card__top
+      .reviewsemploy-card__img
+        img(src=imgSrc, alt="")
+      .reviewsemploy-card__info
+        p #{name}
+        span #{rank}
+    .reviewsemploy-card__text #{text}
+

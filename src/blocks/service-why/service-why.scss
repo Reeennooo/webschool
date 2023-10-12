@@ -1,0 +1,158 @@
+.service-why {
+  position: relative;
+  padding-top: 63px;
+  padding-bottom: 143px;
+
+  .mob {
+    display: none;
+  }
+
+  &__back {
+    background: #F4F8FB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 386px;
+  }
+
+  &__wp {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 99px 76px 122px 121px;
+    border-radius: 100px 100px 0 100px;
+    box-shadow: 0px 50px 100px #DEEDF8;
+  }
+
+  &__left {
+    max-width: 310px;
+    flex-shrink: 0;
+
+    p {
+      margin-top: 31px;
+    }
+
+    .btn {
+      margin-top: 39px;
+      width: 190px;
+    }
+  }
+
+  &__right {
+    max-width: 500px;
+    width: 60%;
+    padding-top: 11px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 53px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      display: block;
+      width: 28px;
+      margin-right: 28px;
+      line-height: 0;
+      img {
+        max-width: 100%;
+        max-height: 30px;
+      }
+    }
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    padding-bottom: 110px;
+  }
+
+  @media (max-width: $desktop) {
+    &__wp {
+      padding: 90px 50px 100px 75px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__wp {
+      border-radius: 50px 50px 0 50px;
+      padding: 78px 34px 70px;
+    }
+
+    &__back {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    padding-top: 0;
+    background: #F4F8FB;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__wp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__left,
+    &__right {
+      max-width: initial;
+      width: 100%;
+    }
+
+    &__right {
+      padding-top: 36px;
+    }
+
+    .desc {
+      display: none;
+    }
+
+    .mob {
+      display: inline-flex;
+      margin-top: 45px;
+      width: 190px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 49px;
+    h3 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__left {
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 17px;
+      }
+    }
+
+    &__row {
+      margin-bottom: 25px;
+      span {
+        margin-right: 13px;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+
+}

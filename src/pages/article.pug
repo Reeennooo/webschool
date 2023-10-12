@@ -1,0 +1,17 @@
+extends ../pug/layout.pug
+
+block meta
+    title Статья
+    meta(name='description', content='')
+    - var footerDopCls = "footer_article"
+
+//-block append head
+   link(rel='stylesheet', href='css/some.css')
+
+//-block header
+
+block content
+  include ../blocks/article-title/article-title
+  include ../blocks/article-banner/article-banner
+  include ../blocks/article-about/article-about
+  include ../blocks/article-slider/article-slider

@@ -1,0 +1,159 @@
+.history-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  .i-modal__content {
+    background: $blue;
+    max-width: 1179px;
+    border-radius: 100px 0 100px 100px;
+    color: #fff;
+    padding: 120px 82px 116px 122px;
+  }
+
+  .i-modal__close {
+    right: 22px;
+    top: 23px;
+
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  .success-slide {
+    &__info {
+      max-width: 480px;
+      p {
+        margin-bottom: 5px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__photo {
+      top: -36px;
+    }
+
+    &__swiper-back1 {
+      top: -26px;
+    }
+
+    &__swiper-back2 {
+      top: -16px;
+    }
+  }
+
+  .success-section {
+    &__nav {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin-top: 17px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    .i-modal {
+      &__content {
+        padding: 100px 50px 80px 80px;
+      }
+    }
+
+    .success-slide {
+      &__info {
+        max-width: 420px;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    .i-modal {
+      &__content {
+        padding-top: 60px;
+        padding-bottom: 70px;
+      }
+    }
+
+    .success-slide {
+      &__wp {
+        flex-direction: column-reverse;
+        padding-top: 407px;
+      }
+
+      &__info {
+        max-width: initial;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    padding: 0;
+    .i-modal {
+      &__content {
+        border-radius: 0;
+        padding-left: 32px;
+        padding-right: 31px;
+        padding-top: 71px;
+        padding-bottom: 37px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .i-modal {
+      &__close {
+        right: 12px;
+        top: 5px;
+      }
+    }
+    .success-slide {
+      &__photo,
+      &__swiper-back1,
+      &__swiper-back2 {
+        width: 246px;
+        height: 271px;
+      }
+
+      &__photo {
+        padding-bottom: 18px;
+      }
+
+      &__swiper-back1 {
+        top: -31px;
+      }
+
+      &__swiper-back2 {
+        top: -26px;
+        left: calc(47% + 14px);
+      }
+
+      &__el-row {
+        flex-wrap: wrap;
+        .success-slide__el-tag {
+          margin-bottom: 4px;
+        }
+      }
+
+      &__wp {
+        padding-top: 271px;
+      }
+    }
+
+    .success-section {
+      &__nav {
+        margin-left: 0;
+        button {
+          margin-right: 30px;
+        }
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+
+
+}

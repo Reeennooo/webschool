@@ -1,0 +1,24 @@
+section.employment-section
+  .employment-section__wp
+    .container
+      .employment-section__block
+        h2 Трудоустроим </br>или вернем деньги
+        .employment-section__text
+          p Вас ждёт индивидуальная поддержка HR-специалиста. Вместе вы составите резюме, подготовите портфолио и разработаете карьерный план, который поможет найти работу быстрее.
+          p Сможете выбрать привлекательные вакансии и получите приоритет перед другими соискателями. Если вы не выйдете на работу, мы вернём вам деньги за курс
+        .swiper.employment-section__swiper
+          .swiper-wrapper
+            +employmentCard("Поможем", "составить резюме", "Проведем встречу, оценим ваши сильные стороны.", "blue")
+            +employmentCard("Разработаем", "индивидуальный карьерный план", "Проведем встречу, оценим ваши сильные стороны.", "persblue")
+            +employmentCard("Откроем доступ к", "партнерским вакансиям", "Проведем встречу, оценим ваши сильные стороны.", "lip")
+            +employmentCard("Поможем", "оформить портфолио", "Проведем встречу, оценим ваши сильные стороны.", "violet")
+            +employmentCard("Разработаем", "индивидуальный карьерный план", "Проведем встречу, оценим ваши сильные стороны.", "persblue")
+            +employmentCard("Откроем доступ к", "партнерским вакансиям", "Проведем встречу, оценим ваши сильные стороны.", "lip")
+            +employmentCard("Поможем", "оформить портфолио", "Проведем встречу, оценим ваши сильные стороны.", "violet")
+          .employment-section__nav
+            button(type="button").employment-section__swiper-prev
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-left")
+            button(type="button").employment-section__swiper-next
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-right")

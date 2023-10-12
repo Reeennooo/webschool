@@ -1,0 +1,329 @@
+//  @supports (-webkit-line-clamp: 6) {
+//  	.your-class {
+//  			display: -webkit-box;
+//  			white-space: normal;
+//  			text-overflow: ellipsis;
+//  			-webkit-box-orient: vertical;//
+//  			-webkit-line-clamp: 6;
+//  			overflow: hidden;
+//  	}
+//  }
+
+.footer {
+  padding-top: 72px;
+  background: #F4F8FB;
+
+  &_article {
+    background: #fff;
+  }
+
+  &__wrap {
+    background: #D7E9F8;
+    border-radius: 100px 100px 0 0;
+    padding-top: 133px;
+    padding-bottom: 88px;
+  }
+
+  a {
+    display: block;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    margin-top: 46px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      background: #C1D2DE;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.25s;
+
+      svg {
+        transition: 0.25s;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background: $violet;
+
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__call {
+    a {
+      font-size: 20px;
+      line-height: 30px;
+
+      @media (hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      margin-top: 13px;
+    }
+  }
+
+  &__adress {
+    margin-top: 29px;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    a {
+      margin-top: 7px;
+      color: #6647F4;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+
+      @media (hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__col1 {
+    max-width: 180px;
+  }
+
+  &__col2 {
+    margin-left: 18.7%;
+  }
+
+  &__col2,
+  &__col3 {
+    a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+
+      @media (hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__col3 {
+    margin-left: 12.5%;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 54px;
+    border-top: 1px solid #C1D2DE;
+    margin-top: 117px;
+
+    p {
+      font-size: 12px;
+      line-height: 15px;
+
+      span {
+        color: #6647F4;
+      }
+    }
+
+    div {
+      display: flex;
+
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0 18px;
+
+        @media (hover: hover) {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__courses {
+    display: none;
+  }
+
+  @media (max-width: $desktop) {
+    &__wrap {
+      padding-top: 90px;
+      padding-bottom: 60px;
+    }
+
+    &__row {
+      justify-content: space-around;
+    }
+
+    &__col2,
+    &__col3 {
+      margin-left: 0;
+
+      a {
+        font-size: 16px;
+        line-height: 36px;
+      }
+    }
+
+    &__call {
+      a {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    &__bottom {
+      margin-top: 80px;
+    }
+
+    &__adress {
+      margin-top: 24px;
+    }
+
+    &__social {
+      margin-top: 32px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__row {
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    &__col2 {
+      display: none;
+    }
+
+    &__wrap {
+      padding-bottom: 30px;
+      padding-top: 49px;
+      border-radius: 0;
+    }
+
+    &__courses {
+      display: block;
+      order: 1;
+    }
+
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 38px;
+      margin-top: 31px;
+
+      div {
+        margin-top: 17px;
+        margin-bottom: 12px;
+        display: block;
+
+        a {
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+
+    // .container {
+    //   padding: 0 23px;
+    // }
+
+    &__call {
+      a {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      p {
+        margin-top: 9px;
+      }
+    }
+
+    &__adress {
+      margin-top: 29px;
+    }
+
+    &__social {
+      margin-top: 36px;
+    }
+
+    &__row {
+      flex-direction: column;
+    }
+
+    &__courses {
+      order: initial;
+      margin-top: 40px;
+
+      .select-block__body {
+        right: auto;
+        left: 0;
+      }
+    }
+
+    &__col3 {
+      margin-top: 30px;
+      columns: 2;
+      column-gap: 11px;
+
+      a {
+        font-size: 16px;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+    }
+
+    &__bottom {
+      margin-top: 29px;
+    }
+  }
+
+  @media (max-width: $mobile-sm) {
+    &_case {
+      background: transparent;
+    }
+  }
+}

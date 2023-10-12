@@ -1,0 +1,18 @@
+section.youlearn-section
+  .youlearn-section__back
+    img(src="img/youlearn-section/back.png", alt="")
+  .container
+    .youlearn-section__wp
+      .youlearn-section__head
+        h2 Чему вы научитесь
+        button(type="button").youlearn-section__next
+            svg(width="16" height="16")
+              use(xlink:href="img/sprite.svg#arrow-right")
+      .swiper.youlearn-section__list.multiBlock(data-mobile="false")
+        .swiper-wrapper
+          +learnCard("1", "violet", "Разбираться в digital-технологиях", "Освоите инструменты для анализа целевой аудитории и конкурентов, создания контента, ведения сообществ и парсинга.","swiper-slide")
+          +learnCard("2", "blue", "Настраивать и запускать контекстную рекламу", "Научитесь управлять рекламными кампаниями и привлекать нужную аудиторию даже при минимальном бюджете.","swiper-slide")
+          +learnCard("3", "yellow", "Работать с системами аналитики", "Узнаете, как отслеживать метрики, настраивать отчёты и счётчики. Сможете собирать точные данные о пользователях бизнеса.","swiper-slide")
+          +learnCard("4", "yellow", "Настраивать и запускать таргетированную рекламу", "Разберётесь, как работать в рекламных кабинетах соцсетей и сможете привлекать нужную аудиторию в Facebook, Instagram и «ВКонтакте».","swiper-slide")
+          +learnCard("5", "blue", "Пользоваться проф. инструментами", "Вы научитесь работать с SimilarWeb, Canva, Crello, Tilda, Marquiz, Target Hunter, Senler, SEO Rush Analytics, Screaming Frog и др.угими сервисами.","swiper-slide")
+          +learnCard("6", "violet", "Продвигать сайты в поисковых системах", "Освоите все этапы работы с SEO и сможете оптимизировать сайт так, чтобы он оказался в топе поисковой выдачи.","swiper-slide")

@@ -1,0 +1,19 @@
+section.home-basics
+  .container
+    .course-section__wp.home-basics__wp
+      .course-section__head
+        h2 Основные компетенции
+        .course-section__nav
+          button(type="button").course-section__next
+            svg(width="16" height="16")
+              use(xlink:href="img/sprite.svg#arrow-right")
+      .swiper.course-section__grid(data-mobile="false")
+        .swiper-wrapper
+          +courseCard("", "SEO продвижение сайта", "img/course-section/img4.png", "от 10 000 тг", "", "", true)
+          +courseCard("", "SMM продвижение", "img/course-section/img1.png", "от 20 000 тг", "", "", true)
+          +courseCard("", "Создание сайтов", "img/course-section/img5.png", "от 100 000 тг", "", "", true)
+          +courseCard("", "Создание интернет-магазина", "img/course-section/img9.png", "от 120 000 тг", "", "", true)
+          +courseCard("", "Контекстная реклама", "img/course-section/img3.png", "от 45 000 тг", "", "", true)
+          +courseCard("", "Копирайтинг и&nbsp;рерайтинг", "img/course-section/img7.png", "от 20 000 тг", "", "", true)
+          +courseCard("", "Дизайн и&nbsp;редизайн сайтов", "img/course-section/img6.png", "от 300 000 тг", "", "", true)
+

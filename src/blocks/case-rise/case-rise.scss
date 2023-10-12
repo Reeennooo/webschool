@@ -1,0 +1,138 @@
+.case-rise {
+  background: #F4F8FB;
+  padding-top: 72px;
+  padding-bottom: 215px;
+  border-radius: 0 0 100px 100px;
+
+  &__wp {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px #DEEDF8;
+    border-radius: 100px 100px 0 100px;
+    padding: 111px 90px 105px 126px;
+  }
+
+  &__left {
+    max-width: 553px;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 52px;
+    width: 151px;
+  }
+
+  .mob {
+    display: none;
+  }
+
+  &__right {
+    max-width: 292px;
+    width: 100%;
+  }
+
+  &__graph {
+    margin-bottom: 66px;
+    max-width: 553px;
+
+    img {
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 35px;
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #7424EC;
+      display: block;
+      margin-bottom: 17px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      margin-top: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding-bottom: 120px;
+
+    &__wp {
+      padding: 70px 60px 70px 70px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__wp {
+      flex-direction: column;
+    }
+
+    &__graph {
+      margin-bottom: 50px;
+    }
+
+    &__left {
+      margin-right: 0;
+      max-width: initial;
+    }
+
+    &__right {
+      max-width: initial;
+      margin-top: 43px;
+    }
+
+    .desc {
+      display: none;
+    }
+
+    .mob {
+      display: flex;
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    padding-top: 41px;
+    padding-bottom: 0;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__wp {
+      border-radius: 50px 50px 0 0;
+      padding: 79px 22px 40px;
+    }
+
+    .btn {
+      margin-top: 40px;
+    }
+
+  }
+
+  @media (max-width: $mobile-sm) {
+    &__wp {
+      box-shadow: 0px 0px 0px #DEEDF8;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+extends ../pug/layout.pug
+
+block meta
+    title О нас
+    meta(name='description', content='')
+
+//-block append head
+   link(rel='stylesheet', href='css/some.css')
+
+//-block header
+
+block content
+  include ../blocks/about-hero/about-hero
+  +aboutWhySection()
+  include ../blocks/about-team/about-team
+  +weteachSection("", "Нам доверяют", "Мы работаем с передовыми компаниями")
+  +reviewsSection("reviews-section_about", "Отзывы o 4web")
+  +aboutOrder("case-order_about")

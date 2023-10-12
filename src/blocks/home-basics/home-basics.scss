@@ -1,0 +1,45 @@
+.home-basics {
+  padding-top: 146px;
+  padding-bottom: 209px;
+
+  .course-card:last-child {
+    &::before {
+      content: "";
+      background-image: url(../img/selformat-section/element.png);
+      width: 176px;
+      height: 167px;
+      background-size: cover;
+      border-radius: 0 0 0 100px;
+      position: absolute;
+      bottom: -77px;
+      right: -67px;
+      z-index: -1;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding-top: 110px;
+    padding-bottom: 130px;
+  }
+
+  @media (max-width: $mobile-big) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2 {
+      font-size: 25px;
+    }
+
+    .course-card {
+      max-width: 237px;
+      margin-right: 17px;
+      h4 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &__bottom {
+        display: flex;
+      }
+    }
+  }
+}

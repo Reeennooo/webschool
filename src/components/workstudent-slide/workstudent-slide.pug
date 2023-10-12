@@ -1,0 +1,24 @@
+mixin workstudent-slide(slideNumber, title, student, srcAvatar, arr, arrhidden, quote, srcWorkImg, noBtn)
+  .workstudent.swiper-slide
+    .workstudent__information
+      h2!=title
+      .workstudent__author
+        img(src=srcAvatar, alt="Фото ученика", class="workstudent__img")
+        .workstudent__name
+          p!=student
+      ul.workstudent__aboutwork
+        each el in arr
+          li.workstudent__el!=el
+        .workstudent__hiddenul(class=`hiddenul-${slideNumber}`)
+          each el in arrhidden
+            li.workstudent__el=el
+      .workstudent__quote
+        .quo &ldquo;
+        p=quote
+      if (!noBtn)
+        a(href="#" data-modal="review-modal").btn.workstudent__btn
+          span.workstudent__btntext Подробнее о работе ученика
+          span.workstudent__btntext2 Подробнее
+    .workstudent__imgcard
+      .workstudent__forimg
+        img(src="img/works-students/slides/work1.png", alt="Фото ученика")

@@ -1,0 +1,15 @@
+section.case-factors
+  .container
+    .case-factors__wp
+      .case-factors__element
+        img(src="img/selformat-section/element.png", alt="")
+      .case-factors__head
+        h2 Факторы успеха
+        button.case-factors__swiper-next
+          svg(width="16" height="16")
+            use(xlink:href="img/sprite.svg#arrow-right")
+      .case-factors__swiper
+        .swiper-wrapper
+          +factorCard("1","violet", "Совместная постановка цели", "Благодаря правильной постановке цели, мы быстро выстроили стратегию работы.", "swiper-slide")
+          +factorCard("2","blue", "Командная работа", "Качественный обмен информацией и контроль изменений позволили нам быстро вносить коррективы в рекламные кампании.", "swiper-slide")
+          +factorCard("3","yellow", "Доверие в&nbsp;сотрудничестве", "За годы работы нам удалось выстроить доверительные отношения с клиентом", "swiper-slide")

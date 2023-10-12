@@ -1,0 +1,156 @@
+.infolist {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000000;
+  cursor: pointer;
+  &:hover {.infolist__title {color: $violet}}
+  // transition: height 1s ease;
+
+  &__price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: auto;
+  }
+}
+
+.infolist_second {
+  margin-bottom: 25px;
+  .infolist {
+    &__title {
+      font-weight: 700;
+    }
+
+    &__btn {
+      width: auto;
+      height: auto;
+      border: none;
+      min-width: initial;
+      margin-left: 15px;
+    }
+    &-btn_open {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.infolist__firstpart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.infolist__title {
+  color: $text-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  transition: color .3s ease;
+}
+
+.infolist__btn {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $violet;
+    .infolist-btnimg {fill: #fff;}
+    border-color: #fff;
+  }
+}
+
+.infolist-btn_open {
+  transform: rotate(-135deg);
+}
+
+.infolist-btnimg {
+  transform: translateX(-.5px);
+  fill: #000;
+}
+
+.infolist__zeroblock {
+  height: 0;
+  transition: height 1s ease;
+  overflow: hidden;
+}
+
+.infolist__hiddenpart {
+  padding-top: 25px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.infolist__information-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.infolist__content {
+  padding: 0;
+  list-style: none;
+  margin-top: 14px;
+}
+
+.infolist__content-el {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.infolist__content-el::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #FEC001;
+  border-radius: 100%;
+  margin-right: 35px;
+}
+
+@media(max-width: $mobile){
+  .infolist__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;}
+
+  .infolist__btn {
+    width: 19px;
+    min-width: 19px;
+    height: 19px;
+    .infolist-btnimg {
+      width: 80%;
+      height: 80%;
+    }
+  }
+  .infolist__information-title {line-height: 25px;}
+  .infolist__content-el {line-height: 25px;}
+
+  .programcourse__list .infolist:last-child,
+  .coursecost__price .infolist:last-child,
+  .questions-wp__list .infolist:last-child {border-bottom: none;}
+
+  .infolist {
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+  }
+
+  .infolist__hiddenpart {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .infolist__content-el::before {margin-right: 24px;}
+
+}

@@ -1,0 +1,43 @@
+.questions {
+  background-color: #F4F8FB;
+  padding-top: 186px;
+}
+
+.questions-wp {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.questions-wp__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: $text-color;
+  flex: 1;
+}
+
+.questions-wp__list {
+  flex: 1;
+  padding: 30px 10px;
+}
+
+@media(max-width: $tablet){
+  .questions-wp {
+    flex-direction: column;
+  }
+
+  .questions {padding-top: 87px;}
+}
+
+@media(max-width: $mobile){
+  .questions-wp {
+    flex-direction: column;
+  }
+  .questions-wp__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .questions-wp__list {padding: 30px 0;}
+}

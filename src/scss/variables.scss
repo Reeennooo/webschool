@@ -1,0 +1,27 @@
+// Widths   420 479 575 640 767 991 1199 1400
+$mobile-sm:     479px;
+$mobile:        575px;
+$mobile-big:    767px;
+$tablet:        991px;
+$desktop:       1199px;
+
+$grid-spacing: 60px;
+$grid-spacing-mid: 30px;
+$grid-spacing-sm: 20px;
+
+$base-img: '../img/';
+
+$font-size: 18px;
+$line-height: 30px;
+// Fonts
+$default-font: 'Montserrat', sans-serif;//400/700
+$additional-font: '', sans-serif;//400/700/800
+
+// Colors
+$text-color: #000;
+$color-error: #E60000;
+$blue: #517FFF;
+$violet: #7424EC;
+$persian-blue: #6647F4;
+$green: #10C9A0;
+$red: #FF517B;

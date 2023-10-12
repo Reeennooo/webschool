@@ -1,0 +1,102 @@
+.lk-section {
+  padding-top: 65px;
+  background: #F4F8FB;
+  padding-bottom: 80px;
+  @media (max-width: $mobile) {
+    padding-bottom: 35px;
+  }
+  &__wp {
+    position: relative;
+    background: rgba(254, 192, 1, 0.2);
+    border-radius: 100px 100px 100px 0;
+    padding: 161px 115px 36px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    @media (max-width: $desktop) {
+      padding: 121px 80px 36px 115px;
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      padding: 0px 80px 60px 115px;
+    }
+    @media (max-width: $mobile-big) {
+      padding: 0px 50px 60px;
+    }
+    @media (max-width: $mobile) {
+      margin: 0px -20px;
+      border-radius: 50px 50px 50px 0;
+      padding: 0px 24px 57px 24px;
+    }
+  }
+
+  &__left {
+    position: relative;
+    flex: 0 1 40%;
+    margin: -79px 0px 0px -36.2%;
+    padding: 0 35.16% 67%;
+    @media (max-width: $desktop) {
+      margin: -79px 0px 0px -32%;
+    }
+    @media (max-width: $tablet) {
+      margin: -14.65% 0px 0px;
+      padding: 0 0 80%;
+    }
+    @media (max-width: $mobile-sm) {
+      padding: 0px 64.4% 120%;
+      margin: -12.65% 0 0 -18.78%;
+    }
+    img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      max-height: 100%;
+      @media (max-width: $tablet) {
+        width: auto;
+      }
+      @media (max-width: $mobile-sm) {
+        top: -7.7%;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 1 49%;
+    @media (max-width: $tablet) {
+      flex: 1 1 100%;
+      margin-top: 40px;
+    }
+    @media (max-width: $mobile-sm) {
+      margin-top: 19px;
+    }
+    & h2 {
+      @media (max-width: $mobile) {
+        font-size: 22px;
+        line-height: 136%;
+      }
+    }
+    & p {
+      @media (max-width: $mobile) {
+        font-size: 16px;
+        line-height: 156%;
+      }
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      margin-top: 34px;
+      margin-bottom: 29px;
+      @media (max-width: $mobile-big) {
+        margin-top: 20px;
+      margin-bottom: 22px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 18px;
+        line-height: 167%;
+      }
+    }
+
+  }
+}

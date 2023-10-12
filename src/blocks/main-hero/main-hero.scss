@@ -1,0 +1,363 @@
+.main-hero {
+  padding-top: 173px;
+  padding-bottom: 170px;
+  position: relative;
+  background-color: #F4F8FB;
+
+  &__wp {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__back {
+    position: absolute;
+    left: 0;
+    bottom: -154px;
+    width: 1830px;
+    transform: translateY(-50px);
+    transition: 0.8s;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 46px;
+  }
+
+  &__left {
+    width: 60%;
+    max-width: 628px;
+  }
+
+  &__right {
+    min-height: 10px;
+    position: relative;
+    width: 30%;
+    // flex-shrink: 0;
+    // height: 100%;
+  }
+
+  &__block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-52%);
+    width: 654px;
+    height: 532px;
+    left: -151px;
+
+    &.visible {
+      .block {
+        opacity: 1;
+      }
+      .img {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .img {
+      position: absolute;
+      opacity: 0;
+      transform: scale(0.7);
+      transition: 0.6s;
+
+      &-1 {
+        top: 127px;
+        left: 189px;
+        transition-delay: 0.2s;
+      }
+
+      &-2 {
+        top: 389px;
+        left: 461px;
+        transition-delay: 0.4s;
+      }
+
+      &-3 {
+        top: 3px;
+        left: 504px;
+        max-width: 138px;
+        transition-delay: 0.1s;
+      }
+    }
+
+    .block {
+      width: 130px;
+      height: 130px;
+      position: absolute;
+      opacity: 0;
+      // transform: scale(0.7);
+      transition: 0.6s;
+
+      &-1 {
+        width: 105px;
+        height: 105px;
+        border: 40px solid #FFFFFF;
+        border-radius: 50%;
+        top: 196px;
+        left: 86px;
+        transition-delay: 0.1s;
+      }
+
+      &-2 {
+        background: #6647F4;
+        border-radius: 0px 100px 0px 0px;
+        top: 266px;
+        left: 10px;
+        height: 125px;
+        transform: rotate(-10deg);
+      }
+
+      &-3 {
+        background: #FEC001;
+        border-radius: 0px 0px 0px 100px;
+        top: 389px;
+        left: 32px;
+        transform: rotate(-10deg);
+        transition-delay: 0.4s;
+      }
+
+      &-4 {
+        background: $blue;
+        border-radius: 0px 0px 100px 0px;
+        top: 382px;
+        left: 176px;
+        transform: rotate(5deg);
+        transition-delay: 0.3s;
+      }
+
+      &-5 {
+        background: #6647F4;
+        border-radius: 0px 100px 0px 0px;
+        top: 130px;
+        left: 332px;
+        transition-delay: 0.6s;
+      }
+
+      &-6 {
+        background-image: url(../img/selformat-section/element.png);
+        background-size: 130%;
+        background-position: center;
+        border-radius: 0px 100px 0px 0px;
+        top: 260px;
+        left: 332px;
+        transition-delay: 0.5s;
+      }
+
+      &-7 {
+        background: #7424EC;
+        border-radius: 0px 0px 0px 100px;
+        top: 389px;
+        left: 332px;
+        transition-delay: 0.2s;
+      }
+
+      &-8 {
+        background: $blue;
+        border-radius: 0px 0px 0px 100px;
+        top: 268px;
+        left: 485px;
+        transform: rotate(7deg);
+        transition-delay: 0.3s;
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+
+    &__back {
+      width: 1400px;
+      bottom: -20px;
+    }
+
+    &__left {
+      max-width: 605px;
+    }
+
+    &__block {
+      transform: translateY(-52%) scale(0.8);
+      left: -200px;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    &__back {
+      display: none;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 130px;
+
+    &__left {
+      max-width: 500px;
+    }
+    &__title {
+      p {
+        display: none;
+      }
+    }
+    &__block {
+      transform: translateY(-52%) scale(0.7);
+      left: -250px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__wp {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__right {
+      max-width: initial;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    &__block {
+      position: relative;
+      transform: scale(0.8);
+      left: auto;
+      bottom: auto;
+      min-width: 654px;
+    }
+
+    &__left {
+      max-width: initial;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    &__tags {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    padding-bottom: 20px;
+    h1 {
+      text-align: left;
+    }
+    &__right {
+      margin-bottom: 34px;
+      width: 281px;
+    }
+
+    &__block {
+      transform: initial;
+      min-width: initial;
+      min-height: initial;
+      height: 193px;
+      .block {
+        width: 48px;
+        height: 48px;
+
+        &-1 {
+          width: 40px;
+          height: 40px;
+          border: 15px solid #FFFFFF;
+          top: 70px;
+          left: 50px;
+        }
+
+        &-2 {
+          top: 96px;
+          left: 22px;
+          height: 46px;
+        }
+        &-3 {
+          top: 141px;
+          left: 30px;
+        }
+        &-4 {
+          top: 139px;
+          left: 84px;
+        }
+        &-5 {
+          top: 46px;
+          left: 141px;
+        }
+        &-6 {
+          top: 93px;
+          left: 141px;
+        }
+        &-7 {
+          top: 141px;
+          left: 141px;
+        }
+        &-8 {
+          top: 96px;
+          left: 198px;
+        }
+      }
+
+      .img {
+        &-1 {
+          width: 53px;
+          height: 97px;
+          top: 45px;
+          left: 89px;
+        }
+        &-2 {
+          top: 141px;
+          left: 189px;
+          width: 54px;
+          height: 54px;
+          overflow: hidden;
+        }
+        &-3 {
+          width: 50px;
+          height: 101px;
+          left: 206px;
+          top: 0;
+          border-radius: 0 100px 0 100px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &__tags {
+      margin-top: 24px;
+      justify-content: flex-start;
+
+      .tag-item {
+        &:first-child {
+          order: -7;
+        }
+        &:nth-child(3) {
+          order: -6;
+        }
+        &:nth-child(4) {
+          order: -5;
+        }
+        &:nth-child(7) {
+          order: -4;
+        }
+        &:nth-child(2) {
+          order: -3;
+        }
+        &:nth-child(6) {
+          order: -2;
+        }
+      }
+    }
+  }
+
+}

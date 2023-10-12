@@ -1,0 +1,15 @@
++modal().order-modal
+  .order-modal__wp
+    .order-modal__back
+      img(src="img/header/order-modal-back.svg", alt="")
+    .order-modal__left
+      h3 Поможем быстро подобрать курс
+      p Мы позвоним, чтобы ответить на&nbsp;все ваши вопросы
+    form(action="/", method="post").order-modal__form
+      .input-block
+        input(type="text" placeholder="Ваше имя").name
+      .input-block
+        input(type="text" placeholder="Телефон").phone
+      .order-modal__btn
+        p Нажимая на кнопку, я соглашаюсь на <a href="#">обработку персональных данных</a> и с <a href="#">правилами пользования Платформой</a>
+        button(type="submit").btn.btn--secondary Отправить

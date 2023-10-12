@@ -1,0 +1,15 @@
+.about-review {
+  padding-top: 155px;
+  background: #F4F8FB;
+  border-radius: 100px 100px 0 0;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__swiper {
+    margin-top: 80px;
+  }
+}

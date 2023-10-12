@@ -1,0 +1,29 @@
+.tag-item {
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 0 29px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  &_link {
+    transition: 0.25s;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $violet;
+        border-color: $violet;
+        color: #fff;
+
+        &::before {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+}

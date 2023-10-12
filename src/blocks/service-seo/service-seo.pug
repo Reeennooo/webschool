@@ -1,0 +1,18 @@
+section.service-seo
+  .service-seo__back
+    img(src="img/service-seo/back.png", alt="")
+  .container
+    .service-seo__wp
+      .service-seo__head
+        h2 Этапы SEO продвижения
+        button(type="button").service-seo__next
+          svg(width="16" height="16")
+            use(xlink:href="img/sprite.svg#arrow-right")
+      .swiper.service-seo__swiper(data-mobile="false")
+        .swiper-wrapper
+          +factorCard("1", "violet", "Формирование семантического ядра", "Все начинается со сбора семантики — запросов, по которым сайт будет продвигаться в интернете.","swiper-slide factor-card_service")
+          +factorCard("2", "blue", "Проведение аудита и аналитики проекта", "Сайт анализируется по многим параметрам — техническим, коммерческим, поведенческим, юзабилити.","swiper-slide factor-card_service")
+          +factorCard("3", "yellow", "Выявление точек роста и формирование стратегии", "На основе данных аудита определяются приоритетные направления работ и составляется план.","swiper-slide factor-card_service")
+          +factorCard("4", "yellow", "Внутренняя оптимизация и контентное наполнение", "Специалисты устраняют ошибки в коде, пишут и публикуют тексты, создают новые страницы, улучшают  скорость загрузки.","swiper-slide factor-card_service")
+          +factorCard("5", "blue", "Работа над юзабилити и коммерческими факторами", "Здесь основной фокус направлен на удобство пользования сайтом и повышение покупательского доверия","swiper-slide factor-card_service")
+          +factorCard("6", "violet", "Внешняя оптимизация и работа над репутацией", "Для повышения доверия поисковых ботов ведется работа над отзывами, ссылочной массой и площадками в соц. сетях.","swiper-slide factor-card_service")

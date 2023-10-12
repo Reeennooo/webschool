@@ -1,0 +1,174 @@
+.teachers-section {
+  background: #F4F8FB;
+  padding-top: 172px;
+  padding-bottom: 150px;
+
+  &__wp {
+    position: relative;
+    width: 100%;
+    min-height: 488px;
+    z-index: 3;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  &__block {
+    background: #FFFFFF;
+    border: 1px solid #F4F8FB;
+    box-shadow: 0px 50px 100px #DEEDF8;
+    min-height: inherit;
+    padding-left: 98px;
+    padding-top: 78px;
+    padding-right: 96px;
+    padding-bottom: 69px;
+    position: relative;
+    border-radius: 100px 100px 0 100px;
+    z-index: 2;
+  }
+
+  &__block-back {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: $violet;
+    width: 314px;
+    border-radius: 100px 100px 0 100px;
+  }
+
+  &__element {
+    position: absolute;
+    bottom: -128px;
+    left: -133px;
+    width: 264px;
+    z-index: 1;
+  }
+
+  &__swiper {
+    position: relative;
+    z-index: 3;
+  }
+  &__swiper-el {
+    border-radius: 100px;
+  }
+
+  &__nav {
+    position: absolute;
+    left: 395px;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+    button {
+      background: transparent;
+      outline: none;
+      border: none;
+      transition: 0.25s;
+      margin: 0 6px;
+
+      &:disabled {
+        svg {
+          fill: #C1D2DE;
+        }
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $desktop) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    &__block {
+      padding: 70px 80px 60px 80px;
+    }
+
+    &__wp {
+      min-height: auto;
+    }
+
+    &__nav {
+      left: 340px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__wp {
+      h2 {
+        display: block;
+      }
+    }
+
+    &__block {
+      margin-top: 40px;
+    }
+
+    &__block-back {
+      height: 319px;
+      width: 100%;
+      bottom: auto;
+      right: 0;
+    }
+
+    &__nav {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      margin-right: auto;
+      justify-content: flex-start;
+    }
+
+    &__element {
+      bottom: -90px;
+      left: -90px;
+      width: 215px;
+    }
+  }
+
+  @media (max-width: $mobile-big) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__element {
+      display: none;
+    }
+
+    h2 {
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 61px;
+    padding-bottom: 30px;
+
+    &__block {
+      margin-top: 38px;
+      border-radius: 50px 50px 100px 0;
+      padding: 50px 40px 36px;
+    }
+
+    &__block-back {
+      border-radius: 50px 50px 0 50px;
+      height: 190px;
+    }
+
+    &__nav {
+      margin-left: -11px;
+    }
+
+  }
+}

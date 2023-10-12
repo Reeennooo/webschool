@@ -1,0 +1,74 @@
+
+.blog-article {
+    background-color: #fff;
+    box-shadow: 0px 30px 80px rgba(222, 237, 248, 0.91);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 210px;
+    flex-wrap: wrap;
+    min-width: 279px;
+    flex: 1 1 100%;
+    transition: box-shadow 0.3s;
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0px 30px 80px rgba(33, 150, 243, 0.41);
+        transition: box-shadow 0.3s;
+      }
+    }
+    @media (max-width: $tablet) {
+      flex: 1 1 48%;
+    }
+    @media (max-width: $mobile-big) {
+      flex: 1 1 100%;
+      row-gap: 33px;
+    }
+  &__items {
+    padding: 31px 0px 30px 36px;
+    box-sizing: content-box;
+    position: relative;
+    flex: 0 1 46%;
+    @media (max-width: $tablet) {
+      padding: 29px 27px 0px 34px;
+          flex-basis: 100%;
+    }
+  }
+  &__subject {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 8px;
+    color: $green;
+    &--red {
+      color: #FF517B;
+    }
+    &--persian-blue {
+      color: $persian-blue;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 17px;
+    max-width: 499px;
+    @media (max-width: $tablet) {
+      margin-bottom: 12px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 156%;
+  }
+  &__img {
+    margin-right: 80px;
+    align-self: end;
+    height: 172px;
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+    }
+    @media (max-width: $mobile) {
+      height: 92px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+section.reviewsemploy-section
+  .reviewsemploy-section__wrap
+    .container
+      .reviewsemploy-section__wp
+        .reviewsemploy-section__head
+          h2 Отзывы работодателей и клиентов
+          button(type="button").reviewsemploy-section__swiper-next
+                svg(width="16" height="16")
+                  use(xlink:href="img/sprite.svg#arrow-right")
+        .swiper.reviewsemploy-section__swiper
+          .swiper-wrapper
+            +reviewsemployCard("img/reviews-section/reviewAva3.jpg","Максим Зубцов", "Директор по маркетингу в Choice", "Курс ИМ WebSchool на мое мнение это номер 1 курс в Казахстане обучающий самым эффективным каналам интернет рекламы. Команда качественные специалисты")
+            +reviewsemployCard("img/reviews-section/reviewAva2.jpg","Роман Горбачев", "Директор по маркетингу в Choice", "Я хотела поблагодарить наших преподавателей: Акылбека,Дастана,Нурбола и Алию за знания, терпение и труд. Получила знания в новой для меня сфере,и довольна результатами.")
+            +reviewsemployCard("img/reviews-section/reviewAva1.jpg","Оксана ЗАйцева", "Директор по маркетингу в Choice", "Курс ИМ WebSchool на мое мнение это номер 1 курс в Казахстане обучающий самым эффективным каналам интернет рекламы. Команда качественные специалисты")
+            +reviewsemployCard("img/reviews-section/reviewAva3.jpg","Максим Зубцов", "Директор по маркетингу в Choice", "Курс ИМ WebSchool на мое мнение это номер 1 курс в Казахстане обучающий самым эффективным каналам интернет рекламы. Команда качественные специалисты")
+          .reviewsemploy-section__nav
+            button(type="button").reviewsemploy-section__swiper-prev
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-left")
+            button(type="button").reviewsemploy-section__swiper-next
+              svg(width="16" height="16")
+                use(xlink:href="img/sprite.svg#arrow-right")
+

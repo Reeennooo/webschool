@@ -1,0 +1,88 @@
+.reviewsemploy-section {
+  background-color: #F4F8FB;
+
+  &__wrap {
+    background: #D7E9F8;
+    border-radius: 0 0 100px 100px;
+    padding-top: 66px;
+    padding-bottom: 209px;
+  }
+  &__wp {
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin-right: 30px;
+      transition: 0.25s;
+
+      &:disabled {
+        svg {
+          fill: #C1D2DE;
+        }
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  &__head {
+    .reviewsemploy-section__swiper-next {
+      display: none;
+    }
+  }
+  &__next-mb {
+    display: none;
+  }
+  &__swiper {
+    margin-top: 81px;
+    overflow: visible;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+  }
+  @media (max-width: $tablet) {
+    &__wrap {
+      border-radius: 0 0 50px 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  @media (max-width: $mobile) {
+    height: 341px;
+    margin-bottom: 40px;
+    background: #D7E9F8;
+    &__wrap {
+      padding-top: 13px;
+      padding-bottom: 0px;
+    }
+    &__wp {
+      button {
+        margin-right: 0px;
+      }
+    }
+    &__swiper {
+      margin-top: 37px;
+    }
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & h4 {
+        flex: 0 0 66%;
+      }
+      .reviewsemploy-section__swiper-next {
+        display: flex;
+      }
+    }
+    &__nav {
+      display: none;
+    }
+  }
+}
